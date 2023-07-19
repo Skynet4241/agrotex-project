@@ -2,6 +2,22 @@ import styled from 'styled-components';
 
 export const HeaderStyle = styled.header`
   background-color: rgba(244, 244, 244, 1);
+  background-image: linear-gradient(
+    to right,
+    rgba(249, 187, 136, 1) 0%,
+    rgba(249, 187, 136, 1) 40%,
+    rgba(244, 244, 244, 1) 40%,
+    rgba(244, 244, 244, 1) 100%
+  );
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      to right,
+      rgba(249, 187, 136, 1) 0%,
+      rgba(249, 187, 136, 1) 30%,
+      rgba(244, 244, 244, 1) 30%,
+      rgba(244, 244, 244, 1) 100%
+    );
+  }
 `;
 
 export const HeaderWrap = styled.div`
@@ -11,7 +27,7 @@ export const HeaderWrap = styled.div`
 `;
 
 export const LogoWrap = styled.div`
-  padding: 16px 16px 18px 20px;
+  padding: 16px 10px 18px;
 `;
 
 export const NavigationWrap = styled.div`
@@ -29,8 +45,8 @@ export const NavigationWrap = styled.div`
     background-image: linear-gradient(
       to right,
       rgba(249, 187, 136, 1) 0%,
-      rgba(249, 187, 136, 1) 40%,
-      rgba(244, 244, 244, 1) 40%,
+      rgba(249, 187, 136, 1) 50%,
+      rgba(244, 244, 244, 1) 50%,
       rgba(244, 244, 244, 1) 100%
     );
     transform: ${({ data }) => (data ? 'translateX(0%)' : 'translateX(100%)')};
@@ -41,15 +57,55 @@ export const NavigationWrap = styled.div`
 export const NavigationList = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 15px;
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 35px;
   }
 `;
-
+export const NavigationLinkBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px 0;
+  @media screen and (min-width: 768px) {
+    align-items: center;
+  }
+`;
 export const NavigationLink = styled.a`
-  font-size: 12px;
+  color: #202020;
+  font-family: Montserrat;
+  font-size: 14px;
+  padding: 10px 0;
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
+`;
+export const NavigationLinkTel = styled.a`
+  color: #202020;
+  font-family: Montserrat;
+  font-size: 14px;
+
+  @media screen and (min-width: 768px) {
+  }
+`;
+export const HeaderButton = styled.button`
+  width: 140px;
+  height: 30px;
+  color: #f4f4f4;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  background-color: rgba(255, 150, 70, 1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
   @media screen and (min-width: 768px) {
   }
 `;

@@ -2,12 +2,15 @@ import { useState } from 'react';
 import { Container } from '../../../utils/Container';
 import { Icon } from '../../../utils/Icon';
 import {
+  HeaderButton,
   HeaderStyle,
   HeaderWrap,
   LogoWrap,
   MenuIconClose,
   MenuIconOpen,
   NavigationLink,
+  NavigationLinkBlock,
+  NavigationLinkTel,
   NavigationList,
   NavigationWrap,
 } from './Header.styled';
@@ -45,6 +48,14 @@ export const Header = () => {
               </li>
               <li>
                 <NavigationLink href="/">Контакти</NavigationLink>
+              </li>
+              <li>
+                <NavigationLinkBlock>
+                  <NavigationLinkTel href="tel:+380961111111">
+                    +38 096 111 11 11
+                  </NavigationLinkTel>
+                  <HeaderButton>Передзвоніть мені!</HeaderButton>
+                </NavigationLinkBlock>
               </li>
             </NavigationList>
           </NavigationWrap>

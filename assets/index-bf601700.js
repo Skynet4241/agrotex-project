@@ -80,7 +80,7 @@ Error generating stack: `+o.message+`
   @media screen and (min-width: 1200px) {
     width: 1280px;
   }
-`,H0=({children:e})=>I.jsx(V0,{children:e}),Q0="/agrotex-project/assets/icons-96baa4e4.svg",$a=({name:e,width:t=24,height:n=24})=>I.jsx("svg",{width:t,height:n,children:I.jsx("use",{href:`${Q0}#${e}`})}),K0=et.header`
+`,H0=({children:e})=>I.jsx(V0,{children:e}),Q0="/assets/icons-96baa4e4.svg",$a=({name:e,width:t=24,height:n=24})=>I.jsx("svg",{width:t,height:n,children:I.jsx("use",{href:`${Q0}#${e}`})}),K0=et.header`
   background-color: rgba(244, 244, 244, 1);
 `,Y0=et.div`
   display: flex;

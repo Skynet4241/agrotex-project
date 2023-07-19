@@ -1,8 +1,7 @@
-import { useState } from "react";
-import "./App.css";
-import { Route, Routes } from "react-router-dom";
-import { PAGE_NAMES } from "./components/Router/path";
-import { MainLayouts } from "./components/layouts/MainLayouts";
+import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import { PAGE_NAMES } from './components/Router/path';
+import { MainLayouts } from './components/Layouts/MainLayouts';
 
 const App = () => {
   return (

@@ -29,8 +29,8 @@ export const NavigationWrap = styled.div`
     background-image: linear-gradient(
       to right,
       rgba(249, 187, 136, 1) 0%,
-      rgba(249, 187, 136, 1) 50%,
-      rgba(244, 244, 244, 1) 50%,
+      rgba(249, 187, 136, 1) 40%,
+      rgba(244, 244, 244, 1) 40%,
       rgba(244, 244, 244, 1) 100%
     );
     transform: ${({ data }) => (data ? 'translateX(0%)' : 'translateX(100%)')};

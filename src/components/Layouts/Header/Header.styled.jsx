@@ -16,7 +16,8 @@ export const LogoWrap = styled.div`
 
 export const NavigationWrap = styled.div`
   @media screen and (max-width: 767px) {
-    display: ${({ data }) => (data ? 'block' : 'none')};
+    opacity: ${({ data }) => (data ? 1 : 0)};
+    visibility: ${({ data }) => (data ? 'visible' : 'hidden')};
     position: fixed;
     top: 0;
     left: 0;
@@ -24,11 +25,17 @@ export const NavigationWrap = styled.div`
     height: 100%;
     z-index: 1;
     padding: 48px 40px;
-    background-color: #696060;
-    transform: translateX(0%);
+    background-color: transparent;
+    background-image: linear-gradient(
+      to right,
+      rgba(249, 187, 136, 1) 0%,
+      rgba(249, 187, 136, 1) 50%,
+      rgba(244, 244, 244, 1) 50%,
+      rgba(244, 244, 244, 1) 100%
+    );
+    transform: ${({ data }) => (data ? 'translateX(0%)' : 'translateX(100%)')};
     transition: transform 250ms linear;
   }
-  display: block;
 `;
 
 export const NavigationList = styled.ul`

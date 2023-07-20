@@ -21,7 +21,7 @@ export const HeroStyle = styled.div`
 `;
 
 export const HeroInfoWrap = styled.div`
-  width: 200px;
+  width: 190px;
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -71,7 +71,7 @@ export const HeroInfoLine = styled.div`
 `;
 
 export const HeroButton = styled.button`
-  width: 200px;
+  width: 190px;
   height: 40px;
   border-radius: 5px;
   background: #ff9646;

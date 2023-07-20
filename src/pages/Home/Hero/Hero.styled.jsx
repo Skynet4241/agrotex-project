@@ -23,9 +23,10 @@ export const HeroStyle = styled.div`
 export const HeroInfoWrap = styled.div`
   width: 200px;
   display: flex;
+  flex-direction: column;
   margin-left: auto;
   padding: 40px 0;
-  @media screen and (min-width: 480px) and (min-width: 768px) {
+  @media screen and (min-width: 480px) and (max-width: 768px) {
     width: 280px;
   }
   @media screen and (min-width: 768px) {
@@ -34,14 +35,14 @@ export const HeroInfoWrap = styled.div`
 `;
 export const Overlay = styled.div`
   width: 100%;
-  height: 100px;
   background-color: rgba(247, 243, 243, 0.3);
   pointer-events: none;
+  margin-bottom: 20px;
 `;
 export const HeroImg = styled.img``;
 
 export const HeroTitle = styled.h1`
-  font-size: 20px;
+  font-size: 18px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
@@ -51,4 +52,31 @@ export const HeroTitle = styled.h1`
   @media screen and (min-width: 768px) {
     font-size: 24px;
   }
+`;
+export const HeroTitleSpan = styled.span`
+  font-size: 16px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  color: #ff9646;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+`;
+export const HeroInfoLine = styled.div`
+  height: 3px;
+  background-color: #f9bb88;
+  margin-bottom: 20px;
+`;
+
+export const HeroButton = styled.button`
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  background: #ff9646;
+  border: none;
+  color: #f4f4f4;
+  font-family: Montserrat;
+  font-size: 14px;
 `;

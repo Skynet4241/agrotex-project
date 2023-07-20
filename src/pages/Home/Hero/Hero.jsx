@@ -2,10 +2,13 @@ import HeroImage from '../../../images/hero-mob.jpg';
 import HeroImageDesk from '../../../images/hero-desk.jpg';
 import { Container } from '../../../utils/Container';
 import {
+  HeroButton,
   HeroImg,
+  HeroInfoLine,
   HeroInfoWrap,
   HeroStyle,
   HeroTitle,
+  HeroTitleSpan,
   Overlay,
 } from './Hero.styled';
 
@@ -21,8 +24,13 @@ export const Hero = () => {
         <Container>
           <HeroInfoWrap>
             <Overlay>
-              <HeroTitle>Запчастини та ремонт c/г техніки</HeroTitle>
+              <HeroTitle>
+                Запчастини та ремонт{' '}
+                <HeroTitleSpan>сільськогосподарської техніки</HeroTitleSpan>
+              </HeroTitle>
             </Overlay>
+            <HeroInfoLine></HeroInfoLine>
+            <HeroButton>Зателефонуйте мені!</HeroButton>
           </HeroInfoWrap>
         </Container>
       </HeroStyle>

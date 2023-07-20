@@ -73,15 +73,6 @@ export const NavigationList = styled.ul`
     gap: 35px;
   }
 `;
-export const NavigationLinkBlock = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  padding: 10px 0;
-  @media screen and (min-width: 768px) {
-    align-items: center;
-  }
-`;
 
 export const NavigationLink = styled(NavLink)`
   color: #202020;
@@ -99,6 +90,10 @@ export const NavigationLinkTel = styled.a`
   font-size: 14px;
 
   @media screen and (min-width: 768px) {
+    color: rgba(255, 150, 70, 1);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
   }
 `;
 export const HeaderButton = styled.button`

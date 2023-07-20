@@ -9,7 +9,6 @@ import {
   MenuIconClose,
   MenuIconOpen,
   NavigationLink,
-  NavigationLinkBlock,
   NavigationLinkTel,
   NavigationList,
   NavigationWrap,
@@ -50,12 +49,9 @@ export const Header = () => {
                 <NavigationLink to="/">Контакти</NavigationLink>
               </li>
               <li>
-                <NavigationLinkBlock>
-                  <NavigationLinkTel href="tel:+380961111111">
-                    +38 096 111 11 11
-                  </NavigationLinkTel>
-                  <HeaderButton>Передзвоніть мені!</HeaderButton>
-                </NavigationLinkBlock>
+                <NavigationLinkTel href="tel:+380961111111">
+                  +38 096 111 11 11
+                </NavigationLinkTel>
               </li>
             </NavigationList>
           </NavigationWrap>

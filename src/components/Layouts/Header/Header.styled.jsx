@@ -52,6 +52,10 @@ export const NavigationWrap = styled.div`
     );
     transform: ${({ data }) => (data ? 'translateX(0%)' : 'translateX(100%)')};
     transition: transform 250ms linear;
+    @media screen and (min-width: 768px) {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 `;
 
@@ -60,7 +64,7 @@ export const NavigationList = styled.ul`
   flex-direction: column;
   gap: 15px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -115,7 +119,7 @@ export const HeaderButton = styled.button`
 
 export const MenuIconOpen = styled.div`
   display: block;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     display: none;
   }
 `;

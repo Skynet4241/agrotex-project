@@ -35,19 +35,19 @@ export const Header = () => {
             </MenuIconClose>
             <NavigationList>
               <li>
-                <NavigationLink href="/">Головна</NavigationLink>
+                <NavigationLink to="/">Головна</NavigationLink>
               </li>
               <li>
-                <NavigationLink href="/">Про нас</NavigationLink>
+                <NavigationLink to="/">Про нас</NavigationLink>
               </li>
               <li>
-                <NavigationLink href="/">Послуги</NavigationLink>
+                <NavigationLink to="/">Послуги</NavigationLink>
               </li>
+              <li></li>
+              <NavigationLink to="/">Запчастини</NavigationLink>
+
               <li>
-                <NavigationLink href="/">Запчастини</NavigationLink>
-              </li>
-              <li>
-                <NavigationLink href="/">Контакти</NavigationLink>
+                <NavigationLink to="/">Контакти</NavigationLink>
               </li>
               <li>
                 <NavigationLinkBlock>

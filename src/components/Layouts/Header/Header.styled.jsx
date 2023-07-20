@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 export const HeaderStyle = styled.header`
   background-color: rgba(244, 244, 244, 1);
@@ -77,7 +78,8 @@ export const NavigationLinkBlock = styled.div`
     align-items: center;
   }
 `;
-export const NavigationLink = styled.a`
+
+export const HeaderNavLink = styled(NavLink)`
   color: #202020;
   font-family: Montserrat;
   font-size: 14px;
@@ -86,6 +88,7 @@ export const NavigationLink = styled.a`
     font-size: 18px;
   }
 `;
+
 export const NavigationLinkTel = styled.a`
   color: #202020;
   font-family: Montserrat;

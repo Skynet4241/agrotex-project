@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Container } from '../../../utils/Container';
 import { Icon } from '../../../utils/Icon';
 import {
-  HeaderButton,
   HeaderStyle,
   HeaderWrap,
   LogoWrap,

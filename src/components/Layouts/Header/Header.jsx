@@ -43,9 +43,9 @@ export const Header = () => {
               <li>
                 <NavigationLink to="/">Послуги</NavigationLink>
               </li>
-              <li></li>
-              <NavigationLink to="/">Запчастини</NavigationLink>
-
+              <li>
+                <NavigationLink to="/">Запчастини</NavigationLink>
+              </li>
               <li>
                 <NavigationLink to="/">Контакти</NavigationLink>
               </li>

@@ -79,7 +79,7 @@ export const NavigationLinkBlock = styled.div`
   }
 `;
 
-export const HeaderNavLink = styled(NavLink)`
+export const NavigationLink = styled(NavLink)`
   color: #202020;
   font-family: Montserrat;
   font-size: 14px;

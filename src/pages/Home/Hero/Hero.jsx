@@ -6,6 +6,7 @@ import {
   HeroImg,
   HeroInfoLine,
   HeroInfoWrap,
+  HeroPic,
   HeroStyle,
   HeroTitle,
   HeroTitleSpan,
@@ -19,11 +20,11 @@ export const Hero = () => {
       <HeroStyle>
         <Container>
           <HeroWrap>
-            <picture>
+            <HeroPic>
               <source srcSet={HeroImage} media="(max-width:767px)" />
               <source srcSet={HeroImageDesk} media="(min-width:768px)" />
               <HeroImg src={HeroImage} alt="Tractor and man in a field" />
-            </picture>
+            </HeroPic>
             <HeroInfoWrap>
               <Overlay>
                 <HeroTitle>

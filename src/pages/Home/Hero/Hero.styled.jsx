@@ -24,8 +24,9 @@ export const HeroWrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+
   @media screen and (min-width: 768px) {
+    gap: 30px;
     flex-direction: row;
   }
 `;
@@ -40,10 +41,12 @@ export const HeroInfoWrap = styled.div`
     width: 280px;
   }
   @media screen and (min-width: 768px) {
-    font-size: 24px;
     width: 245px;
     padding: 0;
     margin: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 340px;
   }
 `;
 export const Overlay = styled.div`
@@ -51,12 +54,22 @@ export const Overlay = styled.div`
   pointer-events: none;
   margin-bottom: 20px;
 `;
-
+export const HeroPic = styled.picture`
+  @media screen and (min-width: 768px) {
+    padding: 10px 0 40px 12px;
+  }
+`;
 export const HeroImg = styled.img`
+  border-radius: 10px;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.3);
+
   @media screen and (min-width: 768px) {
     width: 430px;
-    height: 300px;
-    padding: 10px 0 40px 50px;
+    height: 260px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 800px;
+    height: 500px;
   }
 `;
 
@@ -71,6 +84,9 @@ export const HeroTitle = styled.h1`
   @media screen and (min-width: 768px) {
     font-size: 24px;
   }
+  @media screen and (min-width: 1200px) {
+    font-size: 45px;
+  }
 `;
 export const HeroTitleSpan = styled.span`
   font-size: 16px;
@@ -81,6 +97,9 @@ export const HeroTitleSpan = styled.span`
   @media screen and (min-width: 480px) {
   }
   @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
   }
 `;
 export const HeroInfoLine = styled.div`

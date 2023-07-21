@@ -52,10 +52,6 @@ export const NavigationWrap = styled.div`
     );
     transform: ${({ data }) => (data ? 'translateX(0%)' : 'translateX(100%)')};
     transition: transform 250ms linear;
-    @media screen and (min-width: 768px) {
-      opacity: 1;
-      visibility: visible;
-    }
   }
 `;
 

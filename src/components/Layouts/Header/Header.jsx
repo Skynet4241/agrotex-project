@@ -29,14 +29,19 @@ export const Header = () => {
     };
 
     updateMenuAvailability();
-
     window.addEventListener('resize', updateMenuAvailability);
 
     return () => {
       window.removeEventListener('resize', updateMenuAvailability);
     };
   }, []);
-
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add('menu-open');
+    } else {
+      document.body.classList.remove('menu-open');
+    }
+  }, [isMenuOpen]);
   const handleLinkClick = () => {
     setIsMenuOpen(false);
   };
@@ -55,33 +60,56 @@ export const Header = () => {
             <MenuIconClose
               onClick={handleToggle}
               data={isMenuOpen ? 'true' : undefined}
-            >
-              <Icon name="icon-close" width="20px" height="20px"></Icon>
-            </MenuIconClose>
+            ></MenuIconClose>
             <NavigationList>
               <li>
                 <NavigationLink to="/" onClick={handleLinkClick}>
                   Головна
+                  <Icon
+                    name="icon-arrow-right"
+                    width="10px"
+                    height="10px"
+                  ></Icon>
                 </NavigationLink>
               </li>
               <li>
                 <NavigationLink to="/" onClick={handleLinkClick}>
                   Про нас
+                  <Icon
+                    name="icon-arrow-right"
+                    width="10px"
+                    height="10px"
+                  ></Icon>
                 </NavigationLink>
               </li>
               <li>
                 <NavigationLink to="/" onClick={handleLinkClick}>
                   Послуги
+                  <Icon
+                    name="icon-arrow-right"
+                    width="10px"
+                    height="10px"
+                  ></Icon>
                 </NavigationLink>
               </li>
               <li>
                 <NavigationLink to="/" onClick={handleLinkClick}>
                   Запчастини
+                  <Icon
+                    name="icon-arrow-right"
+                    width="10px"
+                    height="10px"
+                  ></Icon>
                 </NavigationLink>
               </li>
               <li>
                 <NavigationLink to="/" onClick={handleLinkClick}>
                   Контакти
+                  <Icon
+                    name="icon-arrow-right"
+                    width="10px"
+                    height="10px"
+                  ></Icon>
                 </NavigationLink>
               </li>
               <li>
@@ -91,8 +119,11 @@ export const Header = () => {
               </li>
             </NavigationList>
           </NavigationWrap>
-          <MenuIconOpen onClick={handleToggle}>
-            <Icon name="icon-menu" width="24px" height="24px"></Icon>
+          <MenuIconOpen
+            onClick={handleToggle}
+            data={isMenuOpen ? 'true' : undefined}
+          >
+            <span></span>
           </MenuIconOpen>
         </HeaderWrap>
       </Container>

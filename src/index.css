@@ -22,3 +22,7 @@ img {
 a {
     text-decoration: none;
 }
+
+body.menu-open {
+    overflow: hidden;
+}

@@ -2,22 +2,21 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const HeaderStyle = styled.header`
-  background-color: rgba(244, 244, 244, 1);
-  background-image: linear-gradient(
-    to right,
-    rgba(249, 187, 136, 1) 0%,
-    rgba(249, 187, 136, 1) 40%,
-    rgba(244, 244, 244, 1) 40%,
-    rgba(244, 244, 244, 1) 100%
-  );
-  @media screen and (min-width: 768px) {
-    background-image: linear-gradient(
-      to right,
-      rgba(249, 187, 136, 1) 0%,
-      rgba(249, 187, 136, 1) 30%,
-      rgba(244, 244, 244, 1) 30%,
-      rgba(244, 244, 244, 1) 100%
-    );
+  background-color: rgba(255, 255, 255, 1);
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 3;
   }
 `;
 
@@ -25,10 +24,13 @@ export const HeaderWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(255, 255, 255, 1);
 `;
 
 export const LogoWrap = styled.div`
   padding: 16px 10px 18px;
+  position: relative;
+  z-index: 6;
   @media screen and (min-width: 1200px) {
     padding: 16px 10px 18px 80px;
   }
@@ -37,14 +39,13 @@ export const LogoWrap = styled.div`
 export const LogoLink = styled(NavLink)`
   display: flex;
   align-items: center;
-  background: linear-gradient(to right, white, black);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+
+  color: #0063a3;
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
+
   @media screen and (min-width: 768px) {
     font-size: 18px;
   }
@@ -53,12 +54,12 @@ export const LogoLink = styled(NavLink)`
   }
   & > svg {
     margin-right: 5px;
-    fill: #808080;
+    fill: #0063a3;
   }
 `;
 
 export const LogoLinkSpan = styled.span`
-  color: #202020;
+  color: #0063a3;
 `;
 
 export const NavigationWrap = styled.div`
@@ -71,16 +72,10 @@ export const NavigationWrap = styled.div`
     width: 100%;
     height: 100%;
     z-index: 1;
-    padding: 48px 40px;
-    background-color: transparent;
-    background-image: linear-gradient(
-      to right,
-      rgba(249, 187, 136, 1) 0%,
-      rgba(249, 187, 136, 1) 50%,
-      rgba(244, 244, 244, 1) 50%,
-      rgba(244, 244, 244, 1) 100%
-    );
-    transform: ${({ data }) => (data ? 'translateX(0%)' : 'translateX(100%)')};
+
+    background-color: #0063a3;
+
+    transform: ${({ data }) => (data ? 'translateY(0%)' : 'translateY(-100%)')};
     transition: transform 250ms linear;
   }
 `;
@@ -88,12 +83,15 @@ export const NavigationWrap = styled.div`
 export const NavigationList = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  padding-top: 65px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-top: 0;
+    position: relative;
+    z-index: 5;
   }
   @media screen and (min-width: 1200px) {
     gap: 35px;
@@ -101,14 +99,23 @@ export const NavigationList = styled.ul`
 `;
 
 export const NavigationLink = styled(NavLink)`
-  display: block;
-  color: #202020;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  color: #fff;
   font-family: Montserrat;
   font-size: 14px;
+  font-weight: 500;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 16px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
+    color: #0063a3;
+    padding: 0;
   }
   @media screen and (min-width: 1200px) {
     font-size: 20px;
@@ -117,12 +124,15 @@ export const NavigationLink = styled(NavLink)`
 `;
 
 export const NavigationLinkTel = styled.a`
-  color: #202020;
   font-family: Montserrat;
+  padding: 0 16px;
   font-size: 14px;
-
+  font-weight: 500;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
   @media screen and (min-width: 768px) {
-    color: rgba(255, 150, 70, 1);
+    color: #0063a3;
   }
   @media screen and (min-width: 1200px) {
     font-size: 18px;
@@ -146,6 +156,47 @@ export const HeaderButton = styled.button`
 
 export const MenuIconOpen = styled.div`
   display: block;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  z-index: 6;
+  &::before,
+  &::after {
+    content: '';
+    background-color: #151414;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    right: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  &::before {
+    top: 0;
+  }
+  &::after {
+    bottom: 0;
+  }
+  & > span {
+    position: absolute;
+    background-color: #151414;
+    height: 2px;
+    width: 100%;
+    right: 0;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+  &::before {
+    transform: ${({ data }) => data && ' rotate(45deg)'};
+    top: ${({ data }) => data && '9px'};
+  }
+  &::after {
+    transform: ${({ data }) => data && ' rotate(-45deg)'};
+    bottom: ${({ data }) => data && '9px'};
+  }
+  & > span {
+    transform: ${({ data }) => data && 'scale(0)'};
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }

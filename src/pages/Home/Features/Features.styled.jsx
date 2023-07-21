@@ -30,7 +30,7 @@ export const FeaturesInfoList = styled.ul`
     gap: 15px;
   }
   @media screen and (min-width: 1200px) {
-    gap: 35px;
+    gap: 5px;
   }
 `;
 export const FeaturesInfoListItem = styled.li`
@@ -46,11 +46,13 @@ export const FeaturesInfoWrap = styled.div`
   gap: 30px;
 
   @media screen and (min-width: 768px) {
-    padding: 40px 0;
+    padding: 40px 15px;
     height: 192px;
+    gap: 15px;
   }
   @media screen and (min-width: 1200px) {
-    gap: 35px;
+    gap: 20px;
+    padding: 40px 20px;
   }
 `;
 export const FeaturesImageWrap = styled.div`

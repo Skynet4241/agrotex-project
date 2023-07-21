@@ -75,6 +75,9 @@ export const NavigationLink = styled(NavLink)`
   color: #202020;
   font-family: Montserrat;
   font-size: 14px;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
   @media screen and (min-width: 768px) {
     font-size: 16px;
   }

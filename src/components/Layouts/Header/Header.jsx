@@ -4,6 +4,8 @@ import { Icon } from '../../../utils/Icon';
 import {
   HeaderStyle,
   HeaderWrap,
+  LogoLink,
+  LogoLinkSpan,
   LogoWrap,
   MenuIconClose,
   MenuIconOpen,
@@ -44,7 +46,10 @@ export const Header = () => {
       <Container>
         <HeaderWrap>
           <LogoWrap>
-            <a href="/">Agrotexlan</a>
+            <LogoLink to="/">
+              <Icon name="icon-cog" width="30px" height="30px"></Icon>
+              Агротех<LogoLinkSpan>лан</LogoLinkSpan>
+            </LogoLink>
           </LogoWrap>
           <NavigationWrap data={isMenuOpen ? 'true' : undefined}>
             <MenuIconClose

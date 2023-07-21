@@ -29,6 +29,36 @@ export const HeaderWrap = styled.div`
 
 export const LogoWrap = styled.div`
   padding: 16px 10px 18px;
+  @media screen and (min-width: 1200px) {
+    padding: 16px 10px 18px 80px;
+  }
+`;
+
+export const LogoLink = styled(NavLink)`
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, white, black);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
+  }
+  & > svg {
+    margin-right: 5px;
+    fill: #808080;
+  }
+`;
+
+export const LogoLinkSpan = styled.span`
+  color: #202020;
 `;
 
 export const NavigationWrap = styled.div`
@@ -81,7 +111,7 @@ export const NavigationLink = styled(NavLink)`
     font-size: 16px;
   }
   @media screen and (min-width: 1200px) {
-    font-size: 24px;
+    font-size: 20px;
     padding: 20px 0;
   }
 `;

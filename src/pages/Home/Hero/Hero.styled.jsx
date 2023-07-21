@@ -37,8 +37,9 @@ export const HeroInfoWrap = styled.div`
   flex-direction: column;
   margin-left: auto;
   padding: 40px 0;
+  position: relative;
   @media screen and (min-width: 480px) and (max-width: 768px) {
-    width: 280px;
+    width: 260px;
   }
   @media screen and (min-width: 768px) {
     width: 245px;
@@ -106,6 +107,17 @@ export const HeroInfoLine = styled.div`
   height: 3px;
   background-color: #f9bb88;
   margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    width: 400px;
+    top: 60px;
+    right: 0;
+    margin: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 600px;
+    top: 158px;
+  }
 `;
 
 export const HeroButton = styled.button`

@@ -75,9 +75,11 @@ export const NavigationLink = styled(NavLink)`
   color: #202020;
   font-family: Montserrat;
   font-size: 14px;
-
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
   @media screen and (min-width: 1200px) {
-    font-size: 18px;
+    font-size: 24px;
     padding: 20px 0;
   }
 `;

@@ -3,6 +3,10 @@ import Cells from '../../../images/cells.png';
 import {
   FeaturesImageWrap,
   FeaturesImgCells,
+  FeaturesImgCellsDown,
+  FeaturesInfoList,
+  FeaturesInfoListItem,
+  FeaturesInfoSection,
   FeaturesInfoText,
   FeaturesInfoTextWrap,
   FeaturesInfoTitle,
@@ -12,11 +16,11 @@ import { Icon } from '../../../utils/Icon';
 export const Features = () => {
   return (
     <>
-      <div>
+      <FeaturesInfoSection>
         <Container>
           <FeaturesImgCells src={Cells} alt="Клітинки" />
-          <ul>
-            <li>
+          <FeaturesInfoList>
+            <FeaturesInfoListItem>
               <FeaturesInfoWrap>
                 <FeaturesImageWrap>
                   <Icon name="icon-worker" width="60px" height="60px"></Icon>
@@ -30,8 +34,8 @@ export const Features = () => {
                   </FeaturesInfoText>
                 </FeaturesInfoTextWrap>
               </FeaturesInfoWrap>
-            </li>
-            <li>
+            </FeaturesInfoListItem>
+            <FeaturesInfoListItem>
               <FeaturesInfoWrap>
                 <FeaturesImageWrap>
                   <Icon name="icon-money" width="60px" height="60px"></Icon>
@@ -44,8 +48,8 @@ export const Features = () => {
                   </FeaturesInfoText>
                 </FeaturesInfoTextWrap>
               </FeaturesInfoWrap>
-            </li>
-            <li>
+            </FeaturesInfoListItem>
+            <FeaturesInfoListItem>
               <FeaturesInfoWrap>
                 <FeaturesImageWrap>
                   <Icon name="icon-guarantee" width="60px" height="60px"></Icon>
@@ -59,10 +63,11 @@ export const Features = () => {
                   </FeaturesInfoText>
                 </FeaturesInfoTextWrap>
               </FeaturesInfoWrap>
-            </li>
-          </ul>
+            </FeaturesInfoListItem>
+          </FeaturesInfoList>
+          <FeaturesImgCellsDown src={Cells} alt="Клітинки" />
         </Container>
-      </div>
+      </FeaturesInfoSection>
     </>
   );
 };

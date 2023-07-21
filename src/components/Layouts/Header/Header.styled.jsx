@@ -122,8 +122,8 @@ export const MenuIconClose = styled.div`
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 5px;
+  right: 15px;
   min-width: 40px;
   min-height: 40px;
   background-color: transparent;

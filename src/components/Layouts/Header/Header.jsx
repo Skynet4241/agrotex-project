@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Container } from '../../../utils/Container';
 import { Icon } from '../../../utils/Icon';
 import {
@@ -15,7 +15,29 @@ import {
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuAvailable, setIsMenuAvailable] = useState(false);
+
   const handleToggle = () => setIsMenuOpen(pS => !pS);
+
+  useEffect(() => {
+    const updateMenuAvailability = () => {
+      const isMobileMenuAvailable = window.innerWidth <= 767.98;
+      setIsMenuAvailable(isMobileMenuAvailable);
+      setIsMenuOpen(false);
+    };
+
+    updateMenuAvailability();
+
+    window.addEventListener('resize', updateMenuAvailability);
+
+    return () => {
+      window.removeEventListener('resize', updateMenuAvailability);
+    };
+  }, []);
+
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+  };
 
   return (
     <HeaderStyle>
@@ -29,23 +51,33 @@ export const Header = () => {
               onClick={handleToggle}
               data={isMenuOpen ? 'true' : undefined}
             >
-              <Icon name="icon-close" width="14px" height="14px"></Icon>
+              <Icon name="icon-close" width="20px" height="20px"></Icon>
             </MenuIconClose>
             <NavigationList>
               <li>
-                <NavigationLink to="/">Головна</NavigationLink>
+                <NavigationLink to="/" onClick={handleLinkClick}>
+                  Головна
+                </NavigationLink>
               </li>
               <li>
-                <NavigationLink to="/">Про нас</NavigationLink>
+                <NavigationLink to="/" onClick={handleLinkClick}>
+                  Про нас
+                </NavigationLink>
               </li>
               <li>
-                <NavigationLink to="/">Послуги</NavigationLink>
+                <NavigationLink to="/" onClick={handleLinkClick}>
+                  Послуги
+                </NavigationLink>
               </li>
               <li>
-                <NavigationLink to="/">Запчастини</NavigationLink>
+                <NavigationLink to="/" onClick={handleLinkClick}>
+                  Запчастини
+                </NavigationLink>
               </li>
               <li>
-                <NavigationLink to="/">Контакти</NavigationLink>
+                <NavigationLink to="/" onClick={handleLinkClick}>
+                  Контакти
+                </NavigationLink>
               </li>
               <li>
                 <NavigationLinkTel href="tel:+380961111111">

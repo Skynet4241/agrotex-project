@@ -32,7 +32,7 @@ export const LogoWrap = styled.div`
 `;
 
 export const NavigationWrap = styled.div`
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     opacity: ${({ data }) => (data ? 1 : 0)};
     visibility: ${({ data }) => (data ? 'visible' : 'hidden')};
     position: fixed;
@@ -64,7 +64,7 @@ export const NavigationList = styled.ul`
   flex-direction: column;
   gap: 15px;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -75,12 +75,14 @@ export const NavigationList = styled.ul`
 `;
 
 export const NavigationLink = styled(NavLink)`
+  display: block;
   color: #202020;
   font-family: Montserrat;
   font-size: 14px;
-  padding: 10px 0;
+
   @media screen and (min-width: 1200px) {
     font-size: 18px;
+    padding: 20px 0;
   }
 `;
 
@@ -114,7 +116,7 @@ export const HeaderButton = styled.button`
 
 export const MenuIconOpen = styled.div`
   display: block;
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 `;

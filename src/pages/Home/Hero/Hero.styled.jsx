@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const HeroStyle = styled.div`
+  position: relative;
   background-color: rgba(244, 244, 244, 1);
   background-image: linear-gradient(
     to right,
@@ -19,6 +20,15 @@ export const HeroStyle = styled.div`
     );
   }
 `;
+export const HeroWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+`;
 
 export const HeroInfoWrap = styled.div`
   width: 190px;
@@ -31,15 +41,24 @@ export const HeroInfoWrap = styled.div`
   }
   @media screen and (min-width: 768px) {
     font-size: 24px;
+    width: 245px;
+    padding: 0;
+    margin: 0;
   }
 `;
 export const Overlay = styled.div`
-  width: 100%;
   background-color: rgba(247, 243, 243, 0.3);
   pointer-events: none;
   margin-bottom: 20px;
 `;
-export const HeroImg = styled.img``;
+
+export const HeroImg = styled.img`
+  @media screen and (min-width: 768px) {
+    width: 430px;
+    height: 300px;
+    padding: 10px 0 40px 50px;
+  }
+`;
 
 export const HeroTitle = styled.h1`
   font-size: 18px;

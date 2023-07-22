@@ -11,6 +11,8 @@ export const AboutSection = styled.div`
 export const AboutSectionWrap = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 80px;
+  padding: 40px 0;
   @media screen and (min-width: 1200px) {
     flex-direction: row;
     align-items: center;
@@ -19,16 +21,18 @@ export const AboutSectionWrap = styled.div`
   }
 `;
 export const AboutPicture = styled.picture`
-  padding: 30px 0;
   display: block;
 `;
 export const AboutImg = styled.img`
   max-width: 400px;
   max-height: 400px;
   margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 2px 2px 7px 7px rgba(0, 0, 0, 0.2);
   @media screen and (min-width: 600px) {
     max-width: 500px;
     max-height: 500px;
+    box-shadow: 5px 5px 9px 9px rgba(0, 0, 0, 0.2);
   }
   @media screen and (min-width: 768px) {
     max-width: 600px;

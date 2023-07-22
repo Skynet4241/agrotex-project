@@ -71,7 +71,7 @@ export const Header = () => {
           <LogoWrap>
             <LogoLink to="/">
               <Icon name="icon-cog" width="30px" height="30px"></Icon>
-              Агротех<LogoLinkSpan>лан</LogoLinkSpan>
+              <LogoLinkSpan>А</LogoLinkSpan>гротехлан
             </LogoLink>
           </LogoWrap>
           <NavigationWrap data={isMenuOpen ? 'true' : undefined}>

@@ -31,15 +31,16 @@ export const HeaderWrap = styled.div`
   @media screen and (min-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
+    gap: 5px;
   }
 `;
 
 export const LogoWrap = styled.div`
-  padding: 16px 10px 18px 0;
+  padding: 12px 10px 12px 0;
   position: relative;
   z-index: 6;
-  @media screen and (min-width: 1200px) {
-    padding: 16px 10px 18px 0;
+  @media screen and (min-width: 768px) {
+    padding: 10px 10px 2px 0;
   }
 `;
 
@@ -66,6 +67,7 @@ export const LogoLink = styled(NavLink)`
 
 export const LogoLinkSpan = styled.span`
   color: #0063a3;
+  font-size: 28px;
 `;
 
 export const NavigationWrap = styled.div`

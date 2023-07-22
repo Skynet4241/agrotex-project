@@ -31,7 +31,7 @@ export const FeaturesImgCellsWrap = styled.div`
       right: -30px;
     }
     @media screen and (min-width: 1200px) {
-      right: -45px;
+      right: -5px;
     }
   }
 `;
@@ -52,6 +52,7 @@ export const FeaturesInfoList = styled.ul`
   max-width: 300px;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 20px;
   padding: 40px 0;
@@ -66,7 +67,7 @@ export const FeaturesInfoList = styled.ul`
     z-index: 2;
   }
   @media screen and (min-width: 1200px) {
-    gap: 15px;
+    gap: 35px;
   }
 `;
 export const FeaturesInfoListItem = styled.li`
@@ -74,7 +75,7 @@ export const FeaturesInfoListItem = styled.li`
     flex-basis: calc((100% - 40px) / 2);
   }
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 50px) / 4);
+    flex-basis: calc((100% - 200px) / 4);
   }
 `;
 export const FeaturesInfoWrap = styled.div`

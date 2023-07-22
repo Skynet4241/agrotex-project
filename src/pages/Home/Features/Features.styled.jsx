@@ -31,7 +31,7 @@ export const FeaturesImgCellsWrap = styled.div`
       right: -30px;
     }
     @media screen and (min-width: 1200px) {
-      right: 20px;
+      right: -45px;
     }
   }
 `;
@@ -74,7 +74,7 @@ export const FeaturesInfoListItem = styled.li`
     flex-basis: calc((100% - 40px) / 2);
   }
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((90% - 1px) / 4);
+    flex-basis: calc((100% - 50px) / 4);
   }
 `;
 export const FeaturesInfoWrap = styled.div`

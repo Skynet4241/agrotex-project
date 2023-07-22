@@ -68,18 +68,16 @@ export const LogoLinkSpan = styled.span`
 `;
 
 export const NavigationWrap = styled.div`
+  width: 100%;
   @media screen and (max-width: 767.98px) {
     opacity: ${({ data }) => (data ? 1 : 0)};
     visibility: ${({ data }) => (data ? 'visible' : 'hidden')};
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     height: 100%;
     z-index: 1;
-
     background-color: #0063a3;
-
     transform: ${({ data }) => (data ? 'translateY(0%)' : 'translateY(-100%)')};
     transition: transform 250ms linear;
   }
@@ -91,10 +89,7 @@ export const NavigationList = styled.ul`
   padding-top: 65px;
   & > li:last-child {
     @media screen and (min-width: 768px) {
-      margin-left: 230px;
-    }
-    @media screen and (min-width: 1200px) {
-      margin-left: 380px;
+      margin-left: auto;
     }
   }
   @media screen and (min-width: 768px) {
@@ -128,10 +123,10 @@ export const NavigationLink = styled(NavLink)`
     font-size: 16px;
     color: #0063a3;
     padding: 0;
+    padding: 20px 0;
   }
   @media screen and (min-width: 1200px) {
     font-size: 20px;
-    padding: 20px 0;
   }
 `;
 
@@ -147,11 +142,14 @@ export const NavigationLinkTel = styled.a`
   z-index: 5;
   @media screen and (min-width: 768px) {
     color: #0063a3;
+    padding: 20px 0;
   }
   @media screen and (min-width: 1200px) {
     font-size: 18px;
+    padding: 20px 0;
   }
 `;
+
 export const HeaderButton = styled.button`
   width: 140px;
   height: 30px;

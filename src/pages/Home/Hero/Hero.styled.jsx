@@ -98,8 +98,7 @@ export const HeroTitleText = styled.p`
 export const HeroButton = styled.button`
   line-height: 28px;
   max-width: 280px;
-  padding: 1.4rem 4.2rem;
-  padding-right: 3.1rem;
+  padding: 8px 24px;
   width: 100%;
   font-family: Montserrat;
   font-size: 16px;
@@ -108,7 +107,7 @@ export const HeroButton = styled.button`
   color: #0063a3;
   margin-top: 40px;
   transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
-  user-select: none;
+
   @media screen and (min-width: 600px) {
     background-color: rgb(215, 215, 215, 0.3);
     border: 3px solid #fff;

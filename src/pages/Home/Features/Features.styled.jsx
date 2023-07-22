@@ -2,10 +2,14 @@ import styled from 'styled-components';
 export const FeaturesInfoSection = styled.div`
   background-color: rgb(37, 42, 46);
   position: relative;
+  @media screen and (min-width: 600px) {
+    padding: 90px 0;
+  }
 `;
 export const FeaturesInfoBlock = styled.div`
   position: relative;
 `;
+
 export const FeaturesSectionTitleHidden = styled.h2`
   position: absolute;
   white-space: nowrap;
@@ -41,7 +45,7 @@ export const FeaturesImgCellsWrapDown = styled.div`
     width: 100px;
     height: 100px;
     position: absolute;
-    bottom: -10px;
+    bottom: 40px;
     right: 50%;
     transform: translate(50%, 50%);
     z-index: 1;

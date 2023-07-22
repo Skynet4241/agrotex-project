@@ -9,9 +9,11 @@ import {
   LogoWrap,
   MenuIconClose,
   MenuIconOpen,
+  NavigationArrowBlock,
   NavigationLink,
   NavigationLinkTel,
   NavigationList,
+  NavigationListItem,
   NavigationWrap,
 } from './Header.styled';
 import debounce from 'lodash.debounce';
@@ -80,61 +82,71 @@ export const Header = () => {
               data={isMenuOpen ? 'true' : undefined}
             ></MenuIconClose>
             <NavigationList>
-              <li>
+              <NavigationListItem>
                 <NavigationLink to="/" onClick={handleLinkClick}>
                   Головна
-                  <Icon
-                    name="icon-arrow-right"
-                    width="10px"
-                    height="10px"
-                  ></Icon>
+                  <NavigationArrowBlock>
+                    <Icon
+                      name="icon-arrow-right"
+                      width="10px"
+                      height="10px"
+                    ></Icon>
+                  </NavigationArrowBlock>
                 </NavigationLink>
-              </li>
-              <li>
+              </NavigationListItem>
+              <NavigationListItem>
                 <NavigationLink to="/" onClick={handleLinkClick}>
                   Про нас
-                  <Icon
-                    name="icon-arrow-right"
-                    width="10px"
-                    height="10px"
-                  ></Icon>
+                  <NavigationArrowBlock>
+                    <Icon
+                      name="icon-arrow-right"
+                      width="10px"
+                      height="10px"
+                    ></Icon>
+                  </NavigationArrowBlock>
                 </NavigationLink>
-              </li>
-              <li>
+              </NavigationListItem>
+              <NavigationListItem>
                 <NavigationLink to="/" onClick={handleLinkClick}>
                   Послуги
-                  <Icon
-                    name="icon-arrow-right"
-                    width="10px"
-                    height="10px"
-                  ></Icon>
+                  <NavigationArrowBlock>
+                    <Icon
+                      name="icon-arrow-right"
+                      width="10px"
+                      height="10px"
+                    ></Icon>
+                  </NavigationArrowBlock>
                 </NavigationLink>
-              </li>
-              <li>
+              </NavigationListItem>
+              <NavigationListItem>
                 <NavigationLink to="/" onClick={handleLinkClick}>
                   Запчастини
-                  <Icon
-                    name="icon-arrow-right"
-                    width="10px"
-                    height="10px"
-                  ></Icon>
+                  <NavigationArrowBlock>
+                    <Icon
+                      name="icon-arrow-right"
+                      width="10px"
+                      height="10px"
+                    ></Icon>
+                  </NavigationArrowBlock>
                 </NavigationLink>
-              </li>
-              <li>
+              </NavigationListItem>
+              <NavigationListItem>
                 <NavigationLink to="/" onClick={handleLinkClick}>
                   Контакти
-                  <Icon
-                    name="icon-arrow-right"
-                    width="10px"
-                    height="10px"
-                  ></Icon>
+                  <NavigationArrowBlock>
+                    <Icon
+                      name="icon-arrow-right"
+                      width="10px"
+                      height="10px"
+                    ></Icon>
+                  </NavigationArrowBlock>
                 </NavigationLink>
-              </li>
-              <li>
+              </NavigationListItem>
+              <NavigationListItem>
                 <NavigationLinkTel href="tel:+380961111111">
                   +38 096 111 11 11
                 </NavigationLinkTel>
-              </li>
+              </NavigationListItem>
             </NavigationList>
           </NavigationWrap>
           <MenuIconOpen

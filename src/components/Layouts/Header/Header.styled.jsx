@@ -90,24 +90,29 @@ export const NavigationList = styled.ul`
   display: flex;
   flex-direction: column;
   padding-top: 65px;
+
   & > li:last-child {
     @media screen and (min-width: 768px) {
       margin-left: auto;
     }
   }
   @media screen and (min-width: 768px) {
-    display: flex;
     flex-direction: row;
     align-items: center;
     padding-top: 0;
     position: relative;
     z-index: 5;
+    gap: 8px;
   }
   @media screen and (min-width: 1200px) {
     gap: 35px;
   }
 `;
-
+export const NavigationListItem = styled.li`
+  @media screen and (min-width: 768px) {
+    position: relative;
+  }
+`;
 export const NavigationLink = styled(NavLink)`
   display: flex;
   justify-content: space-between;
@@ -126,7 +131,22 @@ export const NavigationLink = styled(NavLink)`
     font-size: 16px;
     color: #0063a3;
     padding: 0;
-    padding: 20px 0;
+    padding: 17px 0;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &::after {
+      content: '';
+      border-bottom: 3px solid #fbad26;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      display: block;
+      transition: all 0.3s;
+    }
+    &:hover::after,
+    &:focus::after {
+      width: 100%;
+    }
   }
   @media screen and (min-width: 1200px) {
     font-size: 20px;
@@ -150,6 +170,11 @@ export const NavigationLinkTel = styled.a`
   @media screen and (min-width: 1200px) {
     font-size: 18px;
     padding: 20px 0;
+  }
+`;
+export const NavigationArrowBlock = styled.div`
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 `;
 

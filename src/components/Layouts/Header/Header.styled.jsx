@@ -7,7 +7,7 @@ export const HeaderStyle = styled.header`
   width: 100%;
   height: 100%;
   left: 0;
-  top: ${({ data }) => (data ? '0' : '-100px')};
+  top: ${({ data }) => (data ? '0' : '-125px')};
   z-index: 3;
   transition: top 0.3s linear;
   &::before {

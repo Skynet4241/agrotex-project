@@ -102,7 +102,7 @@ export const NavigationList = styled.ul`
     padding-top: 0;
     position: relative;
     z-index: 5;
-    gap: 8px;
+    gap: 25px;
   }
   @media screen and (min-width: 1200px) {
     gap: 35px;

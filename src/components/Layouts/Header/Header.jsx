@@ -14,10 +14,13 @@ import {
   NavigationList,
   NavigationWrap,
 } from './Header.styled';
+import debounce from 'lodash.debounce';
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMenuAvailable, setIsMenuAvailable] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
 
   const handleToggle = () => setIsMenuOpen(pS => !pS);
 
@@ -35,6 +38,7 @@ export const Header = () => {
       window.removeEventListener('resize', updateMenuAvailability);
     };
   }, []);
+
   useEffect(() => {
     if (isMenuOpen) {
       document.body.classList.add('menu-open');
@@ -46,8 +50,22 @@ export const Header = () => {
     setIsMenuOpen(false);
   };
 
+  useEffect(() => {
+    const handleScroll = debounce(() => {
+      const currentScrollPos = window.scrollY;
+      const visible = prevScrollPos > currentScrollPos;
+      setPrevScrollPos(currentScrollPos);
+      setIsVisible(visible);
+    }, 100);
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollPos]);
+
   return (
-    <HeaderStyle>
+    <HeaderStyle data={isVisible ? 'true' : undefined}>
       <Container>
         <HeaderWrap>
           <LogoWrap>

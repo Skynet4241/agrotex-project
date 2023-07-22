@@ -3,11 +3,13 @@ import { NavLink } from 'react-router-dom';
 
 export const HeaderStyle = styled.header`
   background-color: rgba(255, 255, 255, 1);
-  position: relative;
+  position: sticky;
   width: 100%;
-  top: 0;
+  height: 100%;
   left: 0;
-
+  top: ${({ data }) => (data ? '0' : '-100px')};
+  z-index: 3;
+  transition: top 0.3s linear;
   &::before {
     content: '';
     position: absolute;
@@ -44,7 +46,6 @@ export const LogoWrap = styled.div`
 export const LogoLink = styled(NavLink)`
   display: flex;
   align-items: center;
-
   color: #0063a3;
   font-family: Montserrat;
   font-size: 14px;

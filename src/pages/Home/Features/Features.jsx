@@ -18,7 +18,7 @@ export const Features = () => {
     <>
       <FeaturesInfoSection>
         <Container>
-          <FeaturesImgCells src={Cells} alt="Клітинки" />
+          {/* <FeaturesImgCells src={Cells} alt="Клітинки" /> */}
           <FeaturesInfoList>
             <FeaturesInfoListItem>
               <FeaturesInfoWrap>
@@ -65,7 +65,7 @@ export const Features = () => {
               </FeaturesInfoWrap>
             </FeaturesInfoListItem>
           </FeaturesInfoList>
-          <FeaturesImgCellsDown src={Cells} alt="Клітинки" />
+          {/* <FeaturesImgCellsDown src={Cells} alt="Клітинки" /> */}
         </Container>
       </FeaturesInfoSection>
     </>

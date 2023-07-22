@@ -24,15 +24,20 @@ export const HeaderWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   background-color: rgba(255, 255, 255, 1);
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 export const LogoWrap = styled.div`
-  padding: 16px 10px 18px;
+  padding: 16px 10px 18px 0;
   position: relative;
   z-index: 6;
   @media screen and (min-width: 1200px) {
-    padding: 16px 10px 18px 80px;
+    padding: 16px 10px 18px 0;
   }
 `;
 
@@ -84,7 +89,14 @@ export const NavigationList = styled.ul`
   display: flex;
   flex-direction: column;
   padding-top: 65px;
-
+  & > li:last-child {
+    @media screen and (min-width: 768px) {
+      margin-left: 230px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 380px;
+    }
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
@@ -131,6 +143,8 @@ export const NavigationLinkTel = styled.a`
   height: 60px;
   line-height: 60px;
   color: #fff;
+  position: relative;
+  z-index: 5;
   @media screen and (min-width: 768px) {
     color: #0063a3;
   }

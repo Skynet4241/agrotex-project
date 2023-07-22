@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 export const FeaturesInfoSection = styled.div`
-  position: relative;
   margin: 60px 0;
 `;
 export const FeaturesImgCells = styled.img`

@@ -27,7 +27,6 @@ export const Services = () => {
           <Overlay></Overlay>
         </ServicesSectionPicture>
         <Container>
-          <Overlay></Overlay>
           <ServicesTitleHidden>Наші послуги</ServicesTitleHidden>
           <ServicesBlock>
             <ServicesInfoBlockTitle>

@@ -97,7 +97,7 @@ export const HeroTitleText = styled.p`
 
 export const HeroButton = styled.button`
   line-height: 28px;
-  max-width: 280px;
+  max-width: 350px;
   padding: 8px 24px;
   width: 100%;
   font-family: Montserrat;

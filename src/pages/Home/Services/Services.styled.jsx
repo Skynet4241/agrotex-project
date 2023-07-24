@@ -64,13 +64,13 @@ export const ServicesBlock = styled.div`
   flex-direction: column;
   gap: 15px;
   @media screen and (min-width: 600px) {
-    padding: 20px 0;
-    background-color: rgb(14, 65, 108, 0.4);
+    padding: 0;
+    background-color: rgb(14, 65, 108, 0.2);
     max-width: 860px;
   }
   @media screen and (min-width: 768px) {
-    padding: 40px 0;
-    background-color: rgb(14, 65, 108, 0.4);
+    padding: 20px 0;
+    background-color: rgb(14, 65, 108, 0.2);
   }
   @media screen and (min-width: 1200px) {
     padding: 40px 0;
@@ -118,7 +118,7 @@ export const ServicesInfoBlockButton = styled(NavLink)`
   cursor: pointer;
   @media screen and (min-width: 600px) {
     font-size: 18px;
-    margin-top: 55px;
+    margin-top: 25px;
     background-color: rgb(14, 65, 108, 0.4);
     color: #fff;
     &:hover,
@@ -127,6 +127,9 @@ export const ServicesInfoBlockButton = styled(NavLink)`
       border-color: #0e416c;
       color: #fff;
     }
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 55px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 20px;

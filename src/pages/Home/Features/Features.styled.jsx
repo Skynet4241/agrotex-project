@@ -32,7 +32,7 @@ export const FeaturesImgCellsWrap = styled.div`
     right: 30px;
     z-index: 1;
     @media screen and (min-width: 600px) {
-      right: -30px;
+      right: -15px;
     }
     @media screen and (min-width: 1200px) {
       right: -5px;

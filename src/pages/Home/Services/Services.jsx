@@ -1,11 +1,14 @@
 import { Container } from '../../../utils/Container';
-import ServicesImage from '../../../images/Services-image.jpg';
-import { Overlay } from '../Hero/Hero.styled';
+import ServicesImageMob from '../../../images/Services-image-mob.jpg';
+import ServicesImageDesk from '../../../images/Services-image-desk.jpg';
+
 import {
   ServicesBlock,
   ServicesInfoBlockButton,
   ServicesInfoBlockText,
   ServicesInfoBlockTitle,
+  ServicesInfoWrap,
+  ServicesOverlay,
   ServicesSection,
   ServicesSectionImage,
   ServicesSectionPicture,
@@ -18,35 +21,37 @@ export const Services = () => {
     <>
       <ServicesSection>
         <ServicesSectionPicture>
-          <source srcSet={ServicesImage} media="(max-width:767px)" />
-          <source srcSet={ServicesImage} media="(min-width:768px)" />
+          <source srcSet={ServicesImageMob} media="(max-width:767px)" />
+          <source srcSet={ServicesImageDesk} media="(min-width:768px)" />
           <ServicesSectionImage
-            src={ServicesImage}
+            src={ServicesImageMob}
             alt="Tractor and man in a field"
           />
-          <Overlay></Overlay>
+          <ServicesOverlay></ServicesOverlay>
         </ServicesSectionPicture>
-        <Container>
-          <ServicesTitleHidden>Наші послуги</ServicesTitleHidden>
-          <ServicesBlock>
-            <ServicesInfoBlockTitle>
-              Професійне обслуговування сільськогосподарської техніки
-            </ServicesInfoBlockTitle>
-            <ServicesInfoBlockText>
-              Наша компанія надає високоякісні послуги з обслуговування
-              сільськогосподарської техніки. Забезпечуючи безперебійну роботу
-              обладнання клієнтів, ми оперативно та професійно діагностуємо та
-              ремонтуємо техніку, навіть безпосередньо на об'єкті. Наша команда
-              висококваліфікованих фахівців, що поєднує в собі гнучкість рішень,
-              навчання і мобільність, завжди готова задовольнити потреби
-              клієнтів та забезпечити надійну співпрацю.
-            </ServicesInfoBlockText>
+        <ServicesInfoWrap>
+          <Container>
+            <ServicesTitleHidden>Наші послуги</ServicesTitleHidden>
+            <ServicesBlock>
+              <ServicesInfoBlockTitle>
+                Професійне обслуговування сільськогосподарської техніки
+              </ServicesInfoBlockTitle>
+              <ServicesInfoBlockText>
+                Наша компанія надає високоякісні послуги з обслуговування
+                сільськогосподарської техніки. Забезпечуючи безперебійну роботу
+                обладнання клієнтів, ми оперативно та професійно діагностуємо та
+                ремонтуємо техніку, навіть безпосередньо на об'єкті. Наша
+                команда висококваліфікованих фахівців, що поєднує в собі
+                гнучкість рішень, навчання і мобільність, завжди готова
+                задовольнити потреби клієнтів та забезпечити надійну співпрацю.
+              </ServicesInfoBlockText>
+            </ServicesBlock>
             <ServicesInfoBlockButton>
               Переглянути послуги{' '}
               <Icon name="icon-circle-right" width="16px" height="16px"></Icon>
             </ServicesInfoBlockButton>
-          </ServicesBlock>
-        </Container>
+          </Container>
+        </ServicesInfoWrap>
       </ServicesSection>
     </>
   );

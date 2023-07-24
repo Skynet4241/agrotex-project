@@ -58,13 +58,19 @@ export const AboutInfoWrap = styled.div`
 `;
 export const AboutTitle = styled.h3`
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
+  @media screen and (min-width: 600px) {
+    font-size: 24px;
+  }
 `;
 
 export const AboutText = styled.p`
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: 16px;
+  @media screen and (min-width: 600px) {
+    font-size: 18px;
+  }
 `;
 export const AboutBtn = styled(NavLink)`
   display: flex;
@@ -84,6 +90,7 @@ export const AboutBtn = styled(NavLink)`
   @media screen and (min-width: 600px) {
     background-color: #0063a3;
     color: #fff;
+    font-size: 18px;
     &:hover,
     &:focus {
       background-color: #0e416c;

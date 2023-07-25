@@ -2,6 +2,7 @@ import { About } from './AboutUs/About';
 import { Features } from './Features';
 import { Hero } from './Hero';
 import { Services } from './Services';
+import { SpareParts } from './SpareParts';
 
 export const Home = () => {
   return (
@@ -10,6 +11,7 @@ export const Home = () => {
       <Features />
       <About />
       <Services />
+      <SpareParts />
     </>
   );
 };

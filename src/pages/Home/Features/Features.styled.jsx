@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 export const FeaturesInfoSection = styled.div`
   background-color: rgb(37, 42, 46);
   position: relative;

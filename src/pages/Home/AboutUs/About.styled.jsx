@@ -5,7 +5,7 @@ export const AboutSection = styled.div`
   background: rgb(241, 241, 246);
   padding-bottom: 50px;
   @media screen and (min-width: 600px) {
-    padding: 90px 0;
+    padding: 50px 0;
   }
 `;
 export const AboutSectionWrap = styled.div`
@@ -60,7 +60,8 @@ export const AboutTitle = styled.h3`
   font-family: Montserrat;
   font-size: 30px;
   font-weight: 600;
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 1200px) {
+    font-size: 34px;
   }
 `;
 

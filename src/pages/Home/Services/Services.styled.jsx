@@ -87,6 +87,7 @@ export const ServicesInfoBlockTitle = styled.h3`
     color: #fff;
   }
   @media screen and (min-width: 1200px) {
+    font-size: 34px;
   }
 `;
 export const ServicesInfoBlockText = styled.p`

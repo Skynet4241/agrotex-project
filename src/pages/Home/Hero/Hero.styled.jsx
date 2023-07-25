@@ -68,7 +68,7 @@ export const HeroInfoWrap = styled.div`
 
 export const HeroTitle = styled.h1`
   font-family: Montserrat;
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 800;
   color: rgb(255, 255, 255);
   margin-bottom: 12px;
@@ -89,6 +89,7 @@ export const HeroTitleText = styled.p`
   @media screen and (min-width: 480px) {
   }
   @media screen and (min-width: 768px) {
+    font-size: 20px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 28px;

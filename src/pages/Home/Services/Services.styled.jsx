@@ -69,7 +69,7 @@ export const ServicesBlock = styled.div`
     max-width: 860px;
   }
   @media screen and (min-width: 768px) {
-    padding: 20px 0;
+    padding: 0;
     background-color: rgb(14, 65, 108, 0.2);
   }
   @media screen and (min-width: 1200px) {
@@ -81,11 +81,10 @@ export const ServicesBlock = styled.div`
 export const ServicesInfoBlockTitle = styled.h3`
   color: #202020;
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
   @media screen and (min-width: 600px) {
     color: #fff;
-    font-size: 24px;
   }
   @media screen and (min-width: 1200px) {
   }
@@ -93,10 +92,12 @@ export const ServicesInfoBlockTitle = styled.h3`
 export const ServicesInfoBlockText = styled.p`
   color: #202020;
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 18px;
   @media screen and (min-width: 600px) {
     color: #fff;
-    font-size: 18px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
   }
   @media screen and (min-width: 1200px) {
   }

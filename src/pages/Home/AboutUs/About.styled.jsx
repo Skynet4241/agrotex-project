@@ -58,18 +58,17 @@ export const AboutInfoWrap = styled.div`
 `;
 export const AboutTitle = styled.h3`
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
   @media screen and (min-width: 600px) {
-    font-size: 24px;
   }
 `;
 
 export const AboutText = styled.p`
   font-family: Montserrat;
-  font-size: 16px;
-  @media screen and (min-width: 600px) {
-    font-size: 18px;
+  font-size: 18px;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
   }
 `;
 export const AboutBtn = styled(NavLink)`

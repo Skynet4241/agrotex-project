@@ -1,11 +1,17 @@
 import { Container } from '../../../utils/Container';
 import ServicesImageMob from '../../../images/Services-image-mob.jpg';
 import ServicesImageDesk from '../../../images/Services-image-desk.jpg';
-
+import ServicesMaintenance from '../../../images/Service-maintenance.jpg';
+import ServicesModernization from '../../../images/Service-modernization.jpg';
+import ServicesProduction from '../../../images/Service-production.jpg';
 import {
   ServicesBlock,
   ServicesInfoBlockButton,
-  ServicesInfoBlockText,
+  ServicesInfoBlockList,
+  ServicesInfoBlockListImage,
+  ServicesInfoBlockListItem,
+  ServicesInfoBlockListTitle,
+  // ServicesInfoBlockText,
   ServicesInfoBlockTitle,
   ServicesInfoWrap,
   ServicesOverlay,
@@ -21,8 +27,8 @@ export const Services = () => {
     <>
       <ServicesSection>
         <ServicesSectionPicture>
-          <source srcSet={ServicesImageMob} media="(max-width:767px)" />
-          <source srcSet={ServicesImageDesk} media="(min-width:768px)" />
+          <source srcSet={ServicesImageMob} media="(max-width:599px)" />
+          <source srcSet={ServicesImageDesk} media="(min-width:600px)" />
           <ServicesSectionImage
             src={ServicesImageMob}
             alt="Tractor and man in a field"
@@ -36,31 +42,47 @@ export const Services = () => {
               <ServicesInfoBlockTitle>
                 Професійне обслуговування сільськогосподарської техніки
               </ServicesInfoBlockTitle>
-              <ServicesInfoBlockText>
+              <ServicesInfoBlockList>
+                <ServicesInfoBlockListItem>
+                  <ServicesInfoBlockListImage
+                    src={ServicesMaintenance}
+                    alt=""
+                  />
+                  <ServicesInfoBlockListTitle>
+                    Сервісне обслуговування
+                  </ServicesInfoBlockListTitle>
+                  <p></p>
+                </ServicesInfoBlockListItem>
+                <ServicesInfoBlockListItem>
+                  <ServicesInfoBlockListImage
+                    src={ServicesModernization}
+                    alt=""
+                  />
+                  <ServicesInfoBlockListTitle>
+                    Модернізація техніки
+                  </ServicesInfoBlockListTitle>
+                  <p></p>
+                </ServicesInfoBlockListItem>
+                <ServicesInfoBlockListItem>
+                  <ServicesInfoBlockListImage src={ServicesProduction} alt="" />
+                  <ServicesInfoBlockListTitle>
+                    Виготовлення запасних частин
+                  </ServicesInfoBlockListTitle>
+                  <p></p>
+                </ServicesInfoBlockListItem>
+              </ServicesInfoBlockList>
+              {/* <ServicesInfoBlockText>
                 Наша компанія надає високоякісні послуги з обслуговування
                 сільськогосподарської техніки.
                 <br /> Виконуємо професійну діагностику та ремонт обладнання.
-                Неперервна робота обладнання клієнтів - наш пріоритет. <br />
-                Ознайомтесь з переліком наших послуг:
-              </ServicesInfoBlockText>
-              <ul>
-                <li>
-                  <img src="" alt="" />
-                  <h4>Сервісне обслуговування</h4>
-                </li>
-                <li>
-                  <img src="" alt="" />
-                  <h4>Модернізація техніки</h4>
-                </li>
-                <li>
-                  <img src="" alt="" />
-                  <h4>Виготовлення запасних частин під замовлення</h4>
-                </li>
-              </ul>
+                Неперервна робота обладнання клієнтів - наш пріоритет. <br /> Ми
+                команда висококваліфікованих фахівців, що поєднує в собі
+                гнучкість рішень, навчання і мобільність, завжди готова
+                задовольнити потреби клієнтів та забезпечити надійну співпрацю.
+              </ServicesInfoBlockText> */}
             </ServicesBlock>
-
             <ServicesInfoBlockButton>
-              Переглянути послуги{' '}
+              Детальніше про послуги{' '}
               <Icon name="icon-circle-right" width="16px" height="16px"></Icon>
             </ServicesInfoBlockButton>
           </Container>

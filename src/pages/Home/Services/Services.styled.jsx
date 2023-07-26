@@ -67,13 +67,10 @@ export const ServicesBlock = styled.div`
   gap: 15px;
   @media screen and (min-width: 600px) {
     padding: 0;
-    background-color: rgb(14, 65, 108, 0.2);
+    background-color: rgb(14, 65, 108, 0.1);
     max-width: 860px;
   }
-  @media screen and (min-width: 768px) {
-    padding: 0;
-    background-color: rgb(14, 65, 108, 0.2);
-  }
+
   @media screen and (min-width: 1200px) {
     padding: 40px 0;
     background-color: rgb(14, 65, 108, 0.05);
@@ -85,6 +82,7 @@ export const ServicesInfoBlockTitle = styled.h3`
   font-family: Montserrat;
   font-size: 30px;
   font-weight: 600;
+  text-align: center;
   @media screen and (min-width: 600px) {
     color: #fff;
   }
@@ -147,5 +145,44 @@ export const ServicesInfoBlockButton = styled(NavLink)`
     @media screen and (min-width: 600px) {
       fill: #fff;
     }
+  }
+`;
+
+export const ServicesInfoBlockList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  @media screen and (min-width: 600px) {
+    flex-direction: row;
+  }
+`;
+
+export const ServicesInfoBlockListItem = styled.li`
+  background-color: #fff;
+  @media screen and (min-width: 600px) {
+    height: 230px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 300px;
+  }
+`;
+export const ServicesInfoBlockListImage = styled.img`
+  max-width: 300px;
+  max-height: 200px;
+  @media screen and (min-width: 600px) {
+    max-width: 400px;
+    max-height: 300px;
+  }
+`;
+export const ServicesInfoBlockListTitle = styled.h4`
+  font-size: 16px;
+  color: #0063a3;
+  font-family: Montserrat;
+  padding: 20px 20px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    padding: 40px 20px;
   }
 `;

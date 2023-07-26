@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const FeaturesInfoSection = styled.div`
   background-color: rgb(37, 42, 46);
-  position: relative;
+  padding: 0 0 40px;
   @media screen and (min-width: 600px) {
     padding: 90px 0;
   }

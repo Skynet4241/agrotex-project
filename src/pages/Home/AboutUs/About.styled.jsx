@@ -3,16 +3,15 @@ import { NavLink } from 'react-router-dom';
 
 export const AboutSection = styled.div`
   background: rgb(241, 241, 246);
-  padding-bottom: 50px;
+  padding: 40px 0;
   @media screen and (min-width: 600px) {
-    padding: 50px 0;
+    padding: 90px 0;
   }
 `;
 export const AboutSectionWrap = styled.div`
   display: flex;
   flex-direction: column;
   gap: 80px;
-  padding: 40px 0;
   @media screen and (min-width: 1200px) {
     flex-direction: row;
     align-items: center;

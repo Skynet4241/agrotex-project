@@ -8,12 +8,14 @@ export const ServicesSection = styled.div`
 `;
 
 export const ServicesInfoWrap = styled.div`
+  padding-bottom: 40px;
   @media screen and (min-width: 600px) {
     position: absolute;
     top: 50%;
     left: 0;
     width: 100%;
     transform: translateY(-50%);
+    padding: 0;
   }
 `;
 export const ServicesSectionPicture = styled.picture`

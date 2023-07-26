@@ -1,7 +1,11 @@
 import { Container } from '../../../utils/Container';
 import {
+  SparePartInfoBlock,
+  SparePartInfoBlockText,
+  SparePartInfoBlockTitle,
   SparePartSection,
   SparePartSectionTitleHidden,
+  SparePartSectionWrap,
 } from './SpareParts.styled';
 
 export const SpareParts = () => {
@@ -9,11 +13,27 @@ export const SpareParts = () => {
     <>
       <SparePartSection>
         <Container>
-          <div>
+          <SparePartSectionWrap>
             <SparePartSectionTitleHidden>
               Запчастини
             </SparePartSectionTitleHidden>
-          </div>
+            <SparePartInfoBlock>
+              <SparePartInfoBlockTitle>
+                Ваш успіх у сільському господарстві починається з нас!
+              </SparePartInfoBlockTitle>
+              <SparePartInfoBlockText>
+                Ми - ваш надійний партнер у виборі запчастин до сівалок. Завдяки
+                нашому досвіду та професіоналізму, ми забезпечуємо вас широким
+                асортиментом запчастин високої якості, які гарантовано підвищать
+                продуктивність вашого обладнання. <br />
+                Наша команда експертів готова допомогти вам у виборі найкращих
+                рішень для вашої сівалки. Ми розуміємо, що правильно підібрані
+                запчастини є ключовим фактором успішної роботи вашої техніки.
+                Тому ми завжди раді допомогти вам обрати оптимальні
+                комплектуючі, що відповідають вашим потребам та бюджету.
+              </SparePartInfoBlockText>
+            </SparePartInfoBlock>
+          </SparePartSectionWrap>
         </Container>
       </SparePartSection>
     </>

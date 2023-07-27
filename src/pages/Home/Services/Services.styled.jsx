@@ -70,10 +70,12 @@ export const ServicesBlock = styled.div`
     background-color: rgb(14, 65, 108, 0.1);
     max-width: 860px;
   }
-
+  @media screen and (min-width: 768px) {
+  }
   @media screen and (min-width: 1200px) {
-    padding: 40px 0;
     background-color: rgb(14, 65, 108, 0.05);
+    margin: 0 auto;
+    gap: 40px;
   }
 `;
 
@@ -104,6 +106,53 @@ export const ServicesInfoBlockText = styled.p`
   }
 `;
 
+export const ServicesInfoBlockList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+  @media screen and (min-width: 600px) {
+    flex-direction: row;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 35px;
+  }
+`;
+
+export const ServicesInfoBlockListItem = styled.li`
+  background-color: #fff;
+  @media screen and (min-width: 600px) {
+    height: 230px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 300px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 320px;
+  }
+`;
+export const ServicesInfoBlockListImage = styled.img`
+  max-width: 300px;
+  max-height: 200px;
+  @media screen and (min-width: 600px) {
+    max-width: 400px;
+    max-height: 300px;
+  }
+`;
+export const ServicesInfoBlockListTitle = styled.h4`
+  font-size: 18px;
+  color: #0063a3;
+  font-family: Montserrat;
+  padding: 20px 20px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    padding: 40px 20px;
+    font-size: 20px;
+  }
+`;
+
 export const ServicesInfoBlockButton = styled(NavLink)`
   display: flex;
   align-items: center;
@@ -118,9 +167,9 @@ export const ServicesInfoBlockButton = styled(NavLink)`
   color: #0e416c;
   transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
   cursor: pointer;
+  margin: 0 auto;
   @media screen and (min-width: 600px) {
     font-size: 18px;
-    margin-top: 25px;
     background-color: rgb(14, 65, 108, 0.4);
     color: #fff;
     &:hover,
@@ -131,7 +180,6 @@ export const ServicesInfoBlockButton = styled(NavLink)`
     }
   }
   @media screen and (min-width: 768px) {
-    margin-top: 55px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 20px;
@@ -145,44 +193,5 @@ export const ServicesInfoBlockButton = styled(NavLink)`
     @media screen and (min-width: 600px) {
       fill: #fff;
     }
-  }
-`;
-
-export const ServicesInfoBlockList = styled.ul`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  @media screen and (min-width: 600px) {
-    flex-direction: row;
-  }
-`;
-
-export const ServicesInfoBlockListItem = styled.li`
-  background-color: #fff;
-  @media screen and (min-width: 600px) {
-    height: 230px;
-  }
-
-  @media screen and (min-width: 768px) {
-    height: 300px;
-  }
-`;
-export const ServicesInfoBlockListImage = styled.img`
-  max-width: 300px;
-  max-height: 200px;
-  @media screen and (min-width: 600px) {
-    max-width: 400px;
-    max-height: 300px;
-  }
-`;
-export const ServicesInfoBlockListTitle = styled.h4`
-  font-size: 16px;
-  color: #0063a3;
-  font-family: Montserrat;
-  padding: 20px 20px;
-  text-align: center;
-  @media screen and (min-width: 768px) {
-    padding: 40px 20px;
   }
 `;

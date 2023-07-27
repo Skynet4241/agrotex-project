@@ -51,7 +51,6 @@ export const Services = () => {
                   <ServicesInfoBlockListTitle>
                     Сервісне обслуговування
                   </ServicesInfoBlockListTitle>
-                  <p></p>
                 </ServicesInfoBlockListItem>
                 <ServicesInfoBlockListItem>
                   <ServicesInfoBlockListImage
@@ -61,14 +60,12 @@ export const Services = () => {
                   <ServicesInfoBlockListTitle>
                     Модернізація техніки
                   </ServicesInfoBlockListTitle>
-                  <p></p>
                 </ServicesInfoBlockListItem>
                 <ServicesInfoBlockListItem>
                   <ServicesInfoBlockListImage src={ServicesProduction} alt="" />
                   <ServicesInfoBlockListTitle>
                     Виготовлення запасних частин
                   </ServicesInfoBlockListTitle>
-                  <p></p>
                 </ServicesInfoBlockListItem>
               </ServicesInfoBlockList>
               {/* <ServicesInfoBlockText>
@@ -80,11 +77,15 @@ export const Services = () => {
                 гнучкість рішень, навчання і мобільність, завжди готова
                 задовольнити потреби клієнтів та забезпечити надійну співпрацю.
               </ServicesInfoBlockText> */}
+              <ServicesInfoBlockButton>
+                Детальніше про послуги{' '}
+                <Icon
+                  name="icon-circle-right"
+                  width="16px"
+                  height="16px"
+                ></Icon>
+              </ServicesInfoBlockButton>
             </ServicesBlock>
-            <ServicesInfoBlockButton>
-              Детальніше про послуги{' '}
-              <Icon name="icon-circle-right" width="16px" height="16px"></Icon>
-            </ServicesInfoBlockButton>
           </Container>
         </ServicesInfoWrap>
       </ServicesSection>

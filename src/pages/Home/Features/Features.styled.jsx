@@ -128,4 +128,7 @@ export const FeaturesInfoText = styled.p`
   @media screen and (min-width: 600px) {
     font-size: 18px;
   }
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 `;

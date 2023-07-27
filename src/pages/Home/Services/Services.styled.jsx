@@ -64,6 +64,7 @@ export const ServicesBlock = styled.div`
   padding: 40px 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 15px;
   @media screen and (min-width: 600px) {
     padding: 0;
@@ -115,6 +116,9 @@ export const ServicesInfoBlockList = styled.ul`
   @media screen and (min-width: 600px) {
     flex-direction: row;
   }
+  @media screen and (min-width: 768px) {
+    gap: 20px;
+  }
   @media screen and (min-width: 1200px) {
     gap: 35px;
   }
@@ -123,14 +127,11 @@ export const ServicesInfoBlockList = styled.ul`
 export const ServicesInfoBlockListItem = styled.li`
   background-color: #fff;
   @media screen and (min-width: 600px) {
-    height: 230px;
   }
 
   @media screen and (min-width: 768px) {
-    height: 300px;
   }
   @media screen and (min-width: 1200px) {
-    height: 320px;
   }
 `;
 export const ServicesInfoBlockListImage = styled.img`
@@ -141,6 +142,22 @@ export const ServicesInfoBlockListImage = styled.img`
     max-height: 300px;
   }
 `;
+
+export const ServicesInfoBlockListTitleWrap = styled.div`
+  @media screen and (min-width: 600px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 120px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 150px;
+  }
+`;
+
 export const ServicesInfoBlockListTitle = styled.h4`
   font-size: 18px;
   color: #0063a3;
@@ -148,7 +165,7 @@ export const ServicesInfoBlockListTitle = styled.h4`
   padding: 20px 20px;
   text-align: center;
   @media screen and (min-width: 768px) {
-    padding: 40px 20px;
+    padding: 0 20px;
     font-size: 20px;
   }
 `;
@@ -156,6 +173,7 @@ export const ServicesInfoBlockListTitle = styled.h4`
 export const ServicesInfoBlockButton = styled(NavLink)`
   display: flex;
   align-items: center;
+  margin-top: 40px;
   line-height: 28px;
   max-width: 350px;
   padding: 18px 24px;
@@ -167,8 +185,8 @@ export const ServicesInfoBlockButton = styled(NavLink)`
   color: #0e416c;
   transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
   cursor: pointer;
-  margin: 0 auto;
   @media screen and (min-width: 600px) {
+    margin: 0;
     font-size: 18px;
     background-color: rgb(14, 65, 108, 0.4);
     color: #fff;
@@ -180,11 +198,13 @@ export const ServicesInfoBlockButton = styled(NavLink)`
     }
   }
   @media screen and (min-width: 768px) {
+    margin-top: 40px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 20px;
     max-width: 400px;
     padding: 18px 24px;
+
     background-color: rgb(14, 65, 108, 0.05);
   }
   & > svg {

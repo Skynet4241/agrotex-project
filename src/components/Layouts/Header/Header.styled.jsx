@@ -49,7 +49,7 @@ export const LogoLink = styled(NavLink)`
   align-items: center;
   color: #0063a3;
   font-family: Montserrat;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
 
@@ -120,7 +120,7 @@ export const NavigationLink = styled(NavLink)`
   border-bottom: 1px solid #fff;
   color: #fff;
   font-family: Montserrat;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   height: 60px;
   line-height: 60px;
@@ -128,7 +128,6 @@ export const NavigationLink = styled(NavLink)`
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
   @media screen and (min-width: 768px) {
-    font-size: 16px;
     color: #0063a3;
     padding: 0;
     padding: 17px 0;
@@ -156,7 +155,7 @@ export const NavigationLink = styled(NavLink)`
 export const NavigationLinkTel = styled.a`
   font-family: Montserrat;
   padding: 0 16px;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   height: 60px;
   line-height: 60px;
@@ -168,7 +167,7 @@ export const NavigationLinkTel = styled.a`
     padding: 20px 0;
   }
   @media screen and (min-width: 1200px) {
-    font-size: 18px;
+    font-size: 20px;
     padding: 20px 0;
   }
 `;

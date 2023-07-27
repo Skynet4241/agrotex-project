@@ -11,6 +11,7 @@ import {
   ServicesInfoBlockListImage,
   ServicesInfoBlockListItem,
   ServicesInfoBlockListTitle,
+  ServicesInfoBlockListTitleWrap,
   // ServicesInfoBlockText,
   ServicesInfoBlockTitle,
   ServicesInfoWrap,
@@ -48,24 +49,30 @@ export const Services = () => {
                     src={ServicesMaintenance}
                     alt=""
                   />
-                  <ServicesInfoBlockListTitle>
-                    Сервісне обслуговування
-                  </ServicesInfoBlockListTitle>
+                  <ServicesInfoBlockListTitleWrap>
+                    <ServicesInfoBlockListTitle>
+                      Сервісне обслуговування
+                    </ServicesInfoBlockListTitle>
+                  </ServicesInfoBlockListTitleWrap>
                 </ServicesInfoBlockListItem>
                 <ServicesInfoBlockListItem>
                   <ServicesInfoBlockListImage
                     src={ServicesModernization}
                     alt=""
                   />
-                  <ServicesInfoBlockListTitle>
-                    Модернізація техніки
-                  </ServicesInfoBlockListTitle>
+                  <ServicesInfoBlockListTitleWrap>
+                    <ServicesInfoBlockListTitle>
+                      Модернізація техніки
+                    </ServicesInfoBlockListTitle>
+                  </ServicesInfoBlockListTitleWrap>
                 </ServicesInfoBlockListItem>
                 <ServicesInfoBlockListItem>
                   <ServicesInfoBlockListImage src={ServicesProduction} alt="" />
-                  <ServicesInfoBlockListTitle>
-                    Виготовлення запасних частин
-                  </ServicesInfoBlockListTitle>
+                  <ServicesInfoBlockListTitleWrap>
+                    <ServicesInfoBlockListTitle>
+                      Виготовлення запасних частин
+                    </ServicesInfoBlockListTitle>
+                  </ServicesInfoBlockListTitleWrap>
                 </ServicesInfoBlockListItem>
               </ServicesInfoBlockList>
               {/* <ServicesInfoBlockText>

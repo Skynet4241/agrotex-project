@@ -124,7 +124,7 @@ export const FeaturesInfoTitle = styled.h3`
 export const FeaturesInfoText = styled.p`
   color: #202020;
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 18px;
   @media screen and (min-width: 600px) {
     font-size: 18px;
   }

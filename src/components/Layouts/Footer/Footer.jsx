@@ -44,10 +44,10 @@ export const Footer = () => {
                 </FooterInfoListLink>
               </li>
             </FooterInfoList>
-            <FooterInfoCopyrightText>
-              © Copyright Agrotexlan 2023
-            </FooterInfoCopyrightText>
           </FooterWrap>
+          <FooterInfoCopyrightText>
+            © Copyright Agrotexlan 2023
+          </FooterInfoCopyrightText>
         </Container>
       </FooterStyle>
     </>

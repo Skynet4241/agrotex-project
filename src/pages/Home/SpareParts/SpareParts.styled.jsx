@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const SparePartSection = styled.div`
-  background-color: rgb(37, 42, 46);
+  background-color: #0063a3;
   padding: 40px 0;
   @media screen and (min-width: 600px) {
     padding: 90px 0;

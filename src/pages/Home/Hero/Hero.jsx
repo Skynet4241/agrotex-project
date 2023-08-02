@@ -13,8 +13,13 @@ import {
   Overlay,
 } from './Hero.styled';
 import { Container } from '../../../utils/Container';
+import { useState } from 'react';
+import { Modal } from '../../../components/Modal';
 
 export const Hero = () => {
+  const [isModalOpen, setIsOpenModal] = useState(false);
+  const handleToggle = () => setIsOpenModal(pS => !pS);
+  console.log(isModalOpen);
   return (
     <>
       <HeroStyle>
@@ -29,7 +34,10 @@ export const Hero = () => {
             <HeroInfoWrap>
               <HeroTitle>Запчастини та ремонт</HeroTitle>
               <HeroTitleText>сільськогосподарської техніки</HeroTitleText>
-              <HeroButton>Зателефонуйте мені!</HeroButton>
+              <HeroButton onClick={handleToggle}>
+                Зателефонуйте мені!
+              </HeroButton>
+              <Modal onClose={handleToggle} isOpen={isModalOpen}></Modal>
             </HeroInfoWrap>
           </Container>
         </HeroWrap>

@@ -108,7 +108,7 @@ export const HeroButton = styled.button`
   color: #0063a3;
   margin-top: 40px;
   transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
-
+  cursor: pointer;
   @media screen and (min-width: 600px) {
     background-color: rgb(215, 215, 215, 0.3);
     border: 3px solid #fff;

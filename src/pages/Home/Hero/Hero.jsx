@@ -15,11 +15,12 @@ import {
 import { Container } from '../../../utils/Container';
 import { useState } from 'react';
 import { Modal } from '../../../components/Modal';
+import { ContactForm } from '../../../components/ContactForm/ContactForm';
 
 export const Hero = () => {
   const [isModalOpen, setIsOpenModal] = useState(false);
   const handleToggle = () => setIsOpenModal(pS => !pS);
-  console.log(isModalOpen);
+
   return (
     <>
       <HeroStyle>
@@ -37,7 +38,9 @@ export const Hero = () => {
               <HeroButton onClick={handleToggle}>
                 Зателефонуйте мені!
               </HeroButton>
-              <Modal onClose={handleToggle} isOpen={isModalOpen}></Modal>
+              <Modal onClose={handleToggle} isOpen={isModalOpen}>
+                <ContactForm />
+              </Modal>
             </HeroInfoWrap>
           </Container>
         </HeroWrap>

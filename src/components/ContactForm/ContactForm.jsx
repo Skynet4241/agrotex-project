@@ -1,6 +1,11 @@
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Formik, Field } from 'formik';
 import * as Yup from 'yup';
-import TextField from '@mui/material/TextField';
+import {
+  StyledErrorMessage,
+  StyledForm,
+  StyledTextField,
+  TextFieldWrap,
+} from './ContactForm.styled';
 
 const validationSchema = Yup.object().shape({
   fullName: Yup.string().required("Обов'язкове поле"),
@@ -25,32 +30,40 @@ export const ContactForm = () => {
       validationSchema={validationSchema}
       onSubmit={handleSubmit}
     >
-      <Form>
-        <div>
+      <StyledForm>
+        <TextFieldWrap>
           <Field
-            as={TextField}
+            as={StyledTextField}
             type="text"
             id="fullName"
             label="ФІО"
             name="fullName"
           />
-          <ErrorMessage name="fullName" component="div" className="error" />
-        </div>
+          <StyledErrorMessage
+            name="fullName"
+            component="div"
+            className="error"
+          />
+        </TextFieldWrap>
 
-        <div>
+        <TextFieldWrap>
           <Field
-            as={TextField}
+            as={StyledTextField}
             type="text"
             id="phoneNumber"
             label="Номер телефону"
             name="phoneNumber"
           />
-          <ErrorMessage name="phoneNumber" component="div" className="error" />
-        </div>
+          <StyledErrorMessage
+            name="phoneNumber"
+            component="div"
+            className="error"
+          />
+        </TextFieldWrap>
 
-        <div>
+        <TextFieldWrap>
           <Field
-            as={TextField}
+            as={StyledTextField}
             id="filled-multiline-static"
             name="description"
             label="Опис"
@@ -58,11 +71,15 @@ export const ContactForm = () => {
             rows={4}
             variant="filled"
           />
-          <ErrorMessage name="description" component="div" className="error" />
-        </div>
+          <StyledErrorMessage
+            name="description"
+            component="div"
+            className="error"
+          />
+        </TextFieldWrap>
 
         <button type="submit">Відправити</button>
-      </Form>
+      </StyledForm>
     </Formik>
   );
 };

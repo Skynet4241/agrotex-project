@@ -22,8 +22,8 @@ const fadeInAnimation = keyframes`
 `;
 
 export const ModalStyle = styled.div`
-  max-width: 300px;
-  max-height: 80vh;
+  /* max-width: 300px; */
+  max-height: 90vh;
   background-color: ${props => props.bgcolor || '#ffffff'};
   color: ${props => props.color || '#ffffff'};
   padding: 48px 18px 40px;
@@ -38,11 +38,11 @@ export const ModalStyle = styled.div`
   animation: ${fadeInAnimation} 0.3s ease-in;
 
   @media (min-width: 375px) {
-    max-width: 395px;
+    max-width: 700px;
   }
 
   @media (min-width: 768px) {
-    max-width: 395px;
+    max-width: 800px;
     height: auto;
     padding: 40px 28px;
   }

@@ -26,6 +26,7 @@ export const HeroStyle = styled.div`
   }
   @media screen and (min-width: 600px) {
     background-image: url(${HeroImageTab});
+    align-items: center;
   }
   @media screen and (min-width: 1200px) {
     background-image: url(${HeroImageDesk});
@@ -55,14 +56,7 @@ export const HeroInfoWrap = styled.div`
   position: relative;
   z-index: 1;
   @media screen and (min-width: 600px) {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-60%);
     padding: 0;
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
   }
 `;
 
@@ -72,10 +66,7 @@ export const HeroTitle = styled.h1`
   font-weight: 800;
   color: rgb(255, 255, 255);
   margin-bottom: 12px;
-  @media screen and (min-width: 600px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
+
   @media screen and (min-width: 1200px) {
     font-size: 44px;
   }
@@ -84,10 +75,8 @@ export const HeroTitleText = styled.p`
   font-size: 18px;
   font-family: Montserrat;
   font-style: normal;
-
   color: rgb(255, 255, 255);
-  @media screen and (min-width: 480px) {
-  }
+
   @media screen and (min-width: 768px) {
     font-size: 20px;
   }

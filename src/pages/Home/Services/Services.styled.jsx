@@ -51,7 +51,7 @@ export const ServicesTitleHidden = styled.div`
 
 export const ServicesBlock = styled.div`
   background-color: #fff;
-  padding: 40px 0;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,8 +60,6 @@ export const ServicesBlock = styled.div`
     padding: 0;
     background-color: rgb(14, 65, 108, 0.1);
     max-width: 860px;
-  }
-  @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
     background-color: rgb(14, 65, 108, 0.05);
@@ -92,8 +90,6 @@ export const ServicesInfoBlockText = styled.p`
   }
   @media screen and (min-width: 768px) {
     font-size: 20px;
-  }
-  @media screen and (min-width: 1200px) {
   }
 `;
 
@@ -141,13 +137,16 @@ export const ServicesInfoBlockListItem = styled.li`
   display: flex;
   justify-content: center;
   text-align: center;
-  min-height: 300px;
-
+  width: 250px;
+  @media screen and (min-width: 600px) {
+    width: calc((100% - 5px) / 3);
+  }
   @media screen and (min-width: 1200px) {
     width: 350px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     ${ServicesInfoText} {
       transform: translateY(0);
       opacity: 1;
@@ -207,8 +206,9 @@ export const ServicesInfoBlockButton = styled(NavLink)`
   color: #0e416c;
   transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
   cursor: pointer;
+  gap: 10px;
   @media screen and (min-width: 600px) {
-    margin: 0;
+    margin-top: 40px;
     font-size: 18px;
     background-color: rgb(14, 65, 108, 0.4);
     color: #fff;

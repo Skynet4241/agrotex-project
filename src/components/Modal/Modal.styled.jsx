@@ -37,11 +37,11 @@ export const ModalStyle = styled.div`
   border-radius: 8px;
   animation: ${fadeInAnimation} 0.3s ease-in;
 
-  @media (min-width: 375px) {
+  @media screen and (min-width: 375px) {
     max-width: 700px;
   }
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     max-width: 800px;
     height: auto;
     padding: 40px 28px;

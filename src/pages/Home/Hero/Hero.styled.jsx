@@ -1,43 +1,41 @@
 import styled from 'styled-components';
+import HeroImage from '../../../images/hero.jpg';
+
+import HeroImageDesk from '../../../images/hero-desk.jpg';
 
 export const HeroStyle = styled.div`
+  display: flex;
+  align-items: flex-end;
   position: relative;
   background-color: rgba(244, 244, 244, 1);
-  height: 100%;
-  @media screen and (min-width: 600px) {
-  }
-  @media screen and (min-width: 1200px) {
-  }
-`;
-export const HeroPic = styled.picture`
-  @media screen and (min-width: 600px) {
-    position: relative;
-  }
-  @media screen and (min-width: 768px) {
-  }
-`;
-export const HeroImg = styled.img`
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
-  }
-`;
-export const Overlay = styled.div`
-  @media screen and (min-width: 600px) {
+  height: 100vh;
+  background-image: url(${HeroImage});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+
+  &::before,
+  &::after {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-    pointer-events: none;
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(${HeroImageDesk});
   }
 `;
+
 export const HeroWrap = styled.div`
   display: flex;
   flex-direction: column;
   background-color: rgb(37, 42, 46);
-
+  width: 100%;
   @media screen and (min-width: 600px) {
     background-color: transparent;
   }
@@ -54,6 +52,7 @@ export const HeroInfoWrap = styled.div`
   flex-direction: column;
   padding: 30px 0;
   position: relative;
+  z-index: 1;
   @media screen and (min-width: 600px) {
     position: absolute;
     top: 50%;

@@ -9,7 +9,7 @@ import {
   FooterWrap,
 } from './Footer.styled';
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <>
       <FooterStyle>
@@ -53,3 +53,5 @@ export const Footer = () => {
     </>
   );
 };
+
+export default Footer;

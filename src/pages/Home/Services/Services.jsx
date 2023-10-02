@@ -15,10 +15,7 @@ import {
   // ServicesInfoBlockText,
   ServicesInfoBlockTitle,
   ServicesInfoWrap,
-  ServicesOverlay,
   ServicesSection,
-  ServicesSectionImage,
-  ServicesSectionPicture,
   ServicesTitleHidden,
 } from './Services.styled';
 import { Icon } from '../../../utils/Icon';
@@ -27,15 +24,6 @@ export const Services = () => {
   return (
     <>
       <ServicesSection>
-        <ServicesSectionPicture>
-          <source srcSet={ServicesImageMob} media="(max-width:599px)" />
-          <source srcSet={ServicesImageDesk} media="(min-width:600px)" />
-          <ServicesSectionImage
-            src={ServicesImageMob}
-            alt="Tractor and man in a field"
-          />
-          <ServicesOverlay></ServicesOverlay>
-        </ServicesSectionPicture>
         <ServicesInfoWrap>
           <Container>
             <ServicesTitleHidden>Наші послуги</ServicesTitleHidden>

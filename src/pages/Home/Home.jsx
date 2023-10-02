@@ -4,7 +4,7 @@ import { Hero } from './Hero';
 import { Services } from './Services';
 import { SpareParts } from './SpareParts';
 
-export const Home = () => {
+const Home = () => {
   return (
     <>
       <Hero />
@@ -15,3 +15,5 @@ export const Home = () => {
     </>
   );
 };
+
+export default Home;

@@ -18,7 +18,7 @@ import {
 } from './Header.styled';
 import debounce from 'lodash.debounce';
 
-export const Header = () => {
+ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMenuAvailable, setIsMenuAvailable] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -160,3 +160,5 @@ export const Header = () => {
     </HeaderStyle>
   );
 };
+
+export default Header

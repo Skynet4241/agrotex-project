@@ -1,51 +1,41 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import ServicesImageMob from '../../../images/Services-image-mob.jpg';
+import ServicesImageDesk from '../../../images/Services-image-desk.jpg';
 
 export const ServicesSection = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+
   @media screen and (min-width: 600px) {
+    background-image: url(${ServicesImageMob});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
     position: relative;
+    padding: 90px 0;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(${ServicesImageDesk});
   }
 `;
 
 export const ServicesInfoWrap = styled.div`
-  padding-bottom: 40px;
-  @media screen and (min-width: 600px) {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    transform: translateY(-50%);
-    padding: 0;
-  }
-`;
-export const ServicesSectionPicture = styled.picture`
-  position: relative;
-
-  @media screen and (min-width: 600px) {
-  }
+  z-index: 1;
 `;
 
-export const ServicesSectionImage = styled.img`
-  width: 100%;
-  height: 100%;
-  @media screen and (min-width: 400px) {
-  }
-  @media screen and (min-width: 600px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-`;
-export const ServicesOverlay = styled.div`
-  @media screen and (min-width: 600px) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-  }
-`;
 export const ServicesTitleHidden = styled.div`
   position: absolute;
   white-space: nowrap;

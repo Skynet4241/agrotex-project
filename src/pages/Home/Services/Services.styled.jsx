@@ -110,20 +110,51 @@ export const ServicesInfoBlockList = styled.ul`
     gap: 20px;
   }
   @media screen and (min-width: 1200px) {
-    gap: 35px;
+    gap: 55px;
+  }
+`;
+export const ServicesInfoText = styled.p`
+  font-size: 14px;
+  font-family: Montserrat;
+  text-align: center;
+  color: #fff;
+  background-color: #0063a3;
+  height: 100%;
+  padding: 15px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  display: flex;
+  align-items: center;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    padding: 20px 15px;
   }
 `;
 
 export const ServicesInfoBlockListItem = styled.li`
-  background-color: #fff;
-  @media screen and (min-width: 600px) {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  min-height: 300px;
+
+  @media screen and (min-width: 1200px) {
+    width: 350px;
   }
 
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
+  &:hover {
+    ${ServicesInfoText} {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 `;
+
 export const ServicesInfoBlockListImage = styled.img`
   max-width: 300px;
   max-height: 200px;
@@ -134,6 +165,7 @@ export const ServicesInfoBlockListImage = styled.img`
 `;
 
 export const ServicesInfoBlockListTitleWrap = styled.div`
+  background-color: #fff;
   @media screen and (min-width: 600px) {
     display: flex;
     align-items: center;

@@ -14,6 +14,7 @@ import {
   ServicesInfoBlockListTitleWrap,
   // ServicesInfoBlockText,
   ServicesInfoBlockTitle,
+  ServicesInfoText,
   ServicesInfoWrap,
   ServicesSection,
   ServicesTitleHidden,
@@ -34,8 +35,8 @@ export const Services = () => {
               </ServicesInfoBlockTitle>
             </AnimatedComponent>
             <ServicesInfoBlockList>
-              <AnimatedComponent>
-                <ServicesInfoBlockListItem>
+              <ServicesInfoBlockListItem>
+                <AnimatedComponent>
                   <ServicesInfoBlockListImage
                     src={ServicesMaintenance}
                     alt="Service maintenance"
@@ -45,10 +46,15 @@ export const Services = () => {
                       Сервісне обслуговування
                     </ServicesInfoBlockListTitle>
                   </ServicesInfoBlockListTitleWrap>
-                </ServicesInfoBlockListItem>
-              </AnimatedComponent>
-              <AnimatedComponent>
-                <ServicesInfoBlockListItem>
+                  <ServicesInfoText>
+                    Ми пропонуємо регулярне технічне обслуговування, виправлення
+                    несправностей, апгрейди, консультації та постачання запасних
+                    частин, гарантуючи найвищу якість і надійність роботи.
+                  </ServicesInfoText>
+                </AnimatedComponent>
+              </ServicesInfoBlockListItem>
+              <ServicesInfoBlockListItem>
+                <AnimatedComponent>
                   <ServicesInfoBlockListImage
                     src={ServicesModernization}
                     alt="Services Modernization"
@@ -58,21 +64,34 @@ export const Services = () => {
                       Модернізація техніки
                     </ServicesInfoBlockListTitle>
                   </ServicesInfoBlockListTitleWrap>
-                </ServicesInfoBlockListItem>
-              </AnimatedComponent>
-              <AnimatedComponent>
-                <ServicesInfoBlockListItem>
+                  <ServicesInfoText>
+                    Сільськогосподарська техніка модернізується, щоб підвищити
+                    продуктивність та ефективність. Наші послуги забезпечують
+                    оновлення та покращення обладнання для досягнення найкращих
+                    результатів у сільському господарстві.
+                  </ServicesInfoText>
+                </AnimatedComponent>
+              </ServicesInfoBlockListItem>
+              <ServicesInfoBlockListItem>
+                <AnimatedComponent>
                   <ServicesInfoBlockListImage
                     src={ServicesProduction}
                     alt="Services Production"
                   />
+                  <ServicesInfoText>
+                    Наша послуга, спрямована на виробництво високоякісних
+                    деталей і компонентів для вашого обладнання. Ми виготовляємо
+                    запасні частини з урахуванням найсучасніших технологій і
+                    стандартів, гарантуючи надійність і довговічність вашого
+                    обладнання.
+                  </ServicesInfoText>
                   <ServicesInfoBlockListTitleWrap>
                     <ServicesInfoBlockListTitle>
                       Виготовлення запасних частин
                     </ServicesInfoBlockListTitle>
                   </ServicesInfoBlockListTitleWrap>
-                </ServicesInfoBlockListItem>
-              </AnimatedComponent>
+                </AnimatedComponent>
+              </ServicesInfoBlockListItem>
             </ServicesInfoBlockList>
             {/* <ServicesInfoBlockText>
                 Наша компанія надає високоякісні послуги з обслуговування

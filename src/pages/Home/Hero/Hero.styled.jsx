@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import HeroImage from '../../../images/hero.jpg';
-
+import HeroImageMob from '../../../images/hero-mob.jpg';
+import HeroImageTab from '../../../images/hero-tab.jpg';
 import HeroImageDesk from '../../../images/hero-desk.jpg';
 
 export const HeroStyle = styled.div`
@@ -9,7 +9,7 @@ export const HeroStyle = styled.div`
   position: relative;
   background-color: rgba(244, 244, 244, 1);
   height: 100vh;
-  background-image: url(${HeroImage});
+  background-image: url(${HeroImageMob});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
@@ -25,6 +25,7 @@ export const HeroStyle = styled.div`
     background-color: rgba(0, 0, 0, 0.2);
   }
   @media screen and (min-width: 600px) {
+    background-image: url(${HeroImageTab});
   }
   @media screen and (min-width: 1200px) {
     background-image: url(${HeroImageDesk});

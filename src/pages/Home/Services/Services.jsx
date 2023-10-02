@@ -19,23 +19,26 @@ import {
   ServicesTitleHidden,
 } from './Services.styled';
 import { Icon } from '../../../utils/Icon';
+import AnimatedComponent from '../../../utils/AnimatedComponent';
 
 export const Services = () => {
   return (
-    <>
-      <ServicesSection>
-        <ServicesInfoWrap>
-          <Container>
-            <ServicesTitleHidden>Наші послуги</ServicesTitleHidden>
-            <ServicesBlock>
+    <ServicesSection>
+      <ServicesInfoWrap>
+        <Container>
+          <ServicesTitleHidden>Наші послуги</ServicesTitleHidden>
+          <ServicesBlock>
+            <AnimatedComponent>
               <ServicesInfoBlockTitle>
                 Професійне обслуговування сільськогосподарської техніки
               </ServicesInfoBlockTitle>
-              <ServicesInfoBlockList>
+            </AnimatedComponent>
+            <ServicesInfoBlockList>
+              <AnimatedComponent>
                 <ServicesInfoBlockListItem>
                   <ServicesInfoBlockListImage
                     src={ServicesMaintenance}
-                    alt=""
+                    alt="Service maintenance"
                   />
                   <ServicesInfoBlockListTitleWrap>
                     <ServicesInfoBlockListTitle>
@@ -43,10 +46,12 @@ export const Services = () => {
                     </ServicesInfoBlockListTitle>
                   </ServicesInfoBlockListTitleWrap>
                 </ServicesInfoBlockListItem>
+              </AnimatedComponent>
+              <AnimatedComponent>
                 <ServicesInfoBlockListItem>
                   <ServicesInfoBlockListImage
                     src={ServicesModernization}
-                    alt=""
+                    alt="Services Modernization"
                   />
                   <ServicesInfoBlockListTitleWrap>
                     <ServicesInfoBlockListTitle>
@@ -54,16 +59,22 @@ export const Services = () => {
                     </ServicesInfoBlockListTitle>
                   </ServicesInfoBlockListTitleWrap>
                 </ServicesInfoBlockListItem>
+              </AnimatedComponent>
+              <AnimatedComponent>
                 <ServicesInfoBlockListItem>
-                  <ServicesInfoBlockListImage src={ServicesProduction} alt="" />
+                  <ServicesInfoBlockListImage
+                    src={ServicesProduction}
+                    alt="Services Production"
+                  />
                   <ServicesInfoBlockListTitleWrap>
                     <ServicesInfoBlockListTitle>
                       Виготовлення запасних частин
                     </ServicesInfoBlockListTitle>
                   </ServicesInfoBlockListTitleWrap>
                 </ServicesInfoBlockListItem>
-              </ServicesInfoBlockList>
-              {/* <ServicesInfoBlockText>
+              </AnimatedComponent>
+            </ServicesInfoBlockList>
+            {/* <ServicesInfoBlockText>
                 Наша компанія надає високоякісні послуги з обслуговування
                 сільськогосподарської техніки.
                 <br /> Виконуємо професійну діагностику та ремонт обладнання.
@@ -72,18 +83,19 @@ export const Services = () => {
                 гнучкість рішень, навчання і мобільність, завжди готова
                 задовольнити потреби клієнтів та забезпечити надійну співпрацю.
               </ServicesInfoBlockText> */}
+            <AnimatedComponent>
               <ServicesInfoBlockButton>
-                Детальніше про послуги{' '}
+                Детальніше про послуги
                 <Icon
                   name="icon-circle-right"
                   width="16px"
                   height="16px"
                 ></Icon>
               </ServicesInfoBlockButton>
-            </ServicesBlock>
-          </Container>
-        </ServicesInfoWrap>
-      </ServicesSection>
-    </>
+            </AnimatedComponent>
+          </ServicesBlock>
+        </Container>
+      </ServicesInfoWrap>
+    </ServicesSection>
   );
 };

@@ -63,7 +63,7 @@ export const FeaturesInfoList = styled.ul`
   padding: 40px 0;
   position: relative;
   z-index: 2;
-  height: 100%;
+
   @media screen and (min-width: 600px) {
     max-width: 100%;
     flex-direction: row;
@@ -89,10 +89,6 @@ export const FeaturesInfoWrap = styled.div`
   align-items: center;
   background: rgb(255, 255, 255);
   height: 100%;
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
-  }
 `;
 export const FeaturesImageWrap = styled.div`
   height: 80px;

@@ -14,9 +14,11 @@ import {
   FeaturesSectionTitleHidden,
 } from './Features.styled';
 import { Icon } from '../../../utils/Icon';
+import AnimatedComponent from '../../../utils/AnimatedComponent';
+
 export const Features = () => {
   return (
-    <>
+    <div>
       <FeaturesInfoSection>
         <Container>
           <FeaturesInfoBlock>
@@ -29,71 +31,85 @@ export const Features = () => {
 
             <FeaturesInfoList>
               <FeaturesInfoListItem>
-                <FeaturesInfoWrap>
-                  <FeaturesImageWrap>
-                    <Icon
-                      name="icon-worker"
-                      width="100px"
-                      height="100px"
-                    ></Icon>
-                  </FeaturesImageWrap>
-                  <FeaturesInfoTextWrap>
-                    <FeaturesInfoTitle>Повний комплекс робіт</FeaturesInfoTitle>
-                    <FeaturesInfoText>
-                      Наша компанія надає послуги та виконує роботи різного
-                      характеру
-                    </FeaturesInfoText>
-                  </FeaturesInfoTextWrap>
-                </FeaturesInfoWrap>
+                <AnimatedComponent>
+                  <FeaturesInfoWrap>
+                    <FeaturesImageWrap>
+                      <Icon
+                        name="icon-worker"
+                        width="100px"
+                        height="100px"
+                      ></Icon>
+                    </FeaturesImageWrap>
+                    <FeaturesInfoTextWrap>
+                      <FeaturesInfoTitle>
+                        Повний комплекс робіт
+                      </FeaturesInfoTitle>
+                      <FeaturesInfoText>
+                        Наша компанія надає послуги та виконує роботи різного
+                        характеру
+                      </FeaturesInfoText>
+                    </FeaturesInfoTextWrap>
+                  </FeaturesInfoWrap>
+                </AnimatedComponent>
               </FeaturesInfoListItem>
               <FeaturesInfoListItem>
-                <FeaturesInfoWrap>
-                  <FeaturesImageWrap>
-                    <Icon name="icon-money" width="100px" height="100px"></Icon>
-                  </FeaturesImageWrap>
-                  <FeaturesInfoTextWrap>
-                    <FeaturesInfoTitle>Даємо гарантію</FeaturesInfoTitle>
-                    <FeaturesInfoText>
-                      Усі наші роботи та послуги супроводжуються гарантією
-                    </FeaturesInfoText>
-                  </FeaturesInfoTextWrap>
-                </FeaturesInfoWrap>
+                <AnimatedComponent>
+                  <FeaturesInfoWrap>
+                    <FeaturesImageWrap>
+                      <Icon
+                        name="icon-money"
+                        width="100px"
+                        height="100px"
+                      ></Icon>
+                    </FeaturesImageWrap>
+                    <FeaturesInfoTextWrap>
+                      <FeaturesInfoTitle>Даємо гарантію</FeaturesInfoTitle>
+                      <FeaturesInfoText>
+                        Усі наші роботи та послуги супроводжуються гарантією
+                      </FeaturesInfoText>
+                    </FeaturesInfoTextWrap>
+                  </FeaturesInfoWrap>
+                </AnimatedComponent>
               </FeaturesInfoListItem>
               <FeaturesInfoListItem>
-                <FeaturesInfoWrap>
-                  <FeaturesImageWrap>
-                    <Icon
-                      name="icon-guarantee"
-                      width="120px"
-                      height="120px"
-                    ></Icon>
-                  </FeaturesImageWrap>
-                  <FeaturesInfoTextWrap>
-                    <FeaturesInfoTitle>Вигідні ціни</FeaturesInfoTitle>
-                    <FeaturesInfoText>
-                      У нас ви знайдете послуги з чіткими та прозорими цінами,
-                      доступними для кожного
-                    </FeaturesInfoText>
-                  </FeaturesInfoTextWrap>
-                </FeaturesInfoWrap>
+                <AnimatedComponent>
+                  <FeaturesInfoWrap>
+                    <FeaturesImageWrap>
+                      <Icon
+                        name="icon-guarantee"
+                        width="120px"
+                        height="120px"
+                      ></Icon>
+                    </FeaturesImageWrap>
+                    <FeaturesInfoTextWrap>
+                      <FeaturesInfoTitle>Вигідні ціни</FeaturesInfoTitle>
+                      <FeaturesInfoText>
+                        У нас ви знайдете послуги з чіткими та прозорими цінами,
+                        доступними для кожного
+                      </FeaturesInfoText>
+                    </FeaturesInfoTextWrap>
+                  </FeaturesInfoWrap>
+                </AnimatedComponent>
               </FeaturesInfoListItem>
               <FeaturesInfoListItem>
-                <FeaturesInfoWrap>
-                  <FeaturesImageWrap>
-                    <Icon
-                      name="icon-discounts"
-                      width="120px"
-                      height="120px"
-                    ></Icon>
-                  </FeaturesImageWrap>
-                  <FeaturesInfoTextWrap>
-                    <FeaturesInfoTitle>Система знижок</FeaturesInfoTitle>
-                    <FeaturesInfoText>
-                      Ми пропонуємо систему знижок, яка розрахована на вигоду
-                      для наших постійних клієнтів і замовлень великого обсягу
-                    </FeaturesInfoText>
-                  </FeaturesInfoTextWrap>
-                </FeaturesInfoWrap>
+                <AnimatedComponent>
+                  <FeaturesInfoWrap>
+                    <FeaturesImageWrap>
+                      <Icon
+                        name="icon-discounts"
+                        width="120px"
+                        height="120px"
+                      ></Icon>
+                    </FeaturesImageWrap>
+                    <FeaturesInfoTextWrap>
+                      <FeaturesInfoTitle>Система знижок</FeaturesInfoTitle>
+                      <FeaturesInfoText>
+                        Ми пропонуємо систему знижок, яка розрахована на вигоду
+                        для наших постійних клієнтів і замовлень великого обсягу
+                      </FeaturesInfoText>
+                    </FeaturesInfoTextWrap>
+                  </FeaturesInfoWrap>
+                </AnimatedComponent>
               </FeaturesInfoListItem>
             </FeaturesInfoList>
             <FeaturesImgCellsWrapDown>
@@ -102,6 +118,6 @@ export const Features = () => {
           </FeaturesInfoBlock>
         </Container>
       </FeaturesInfoSection>
-    </>
+    </div>
   );
 };

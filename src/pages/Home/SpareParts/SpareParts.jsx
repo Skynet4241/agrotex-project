@@ -1,3 +1,4 @@
+import AnimatedComponent from '../../../utils/AnimatedComponent';
 import { Container } from '../../../utils/Container';
 import {
   SparePartInfoBlock,
@@ -17,21 +18,23 @@ export const SpareParts = () => {
             <SparePartSectionTitleHidden>
               Запчастини
             </SparePartSectionTitleHidden>
-            <SparePartInfoBlock>
-              <SparePartInfoBlockTitle>
-                Ваш успіх у сільському господарстві починається з нас!
-              </SparePartInfoBlockTitle>
-              <SparePartInfoBlockText>
-                Ми - ваш надійний партнер у виборі запчастин до сівалок. Завдяки
-                нашому досвіду та професіоналізму, ми забезпечуємо вас широким
-                асортиментом запчастин високої якості, які гарантовано підвищать
-                продуктивність вашого обладнання. <br />
-                Ми розуміємо, що правильно підібрані запчастини є ключовим
-                фактором успішної роботи вашої техніки. Тому ми завжди раді
-                допомогти вам обрати оптимальні комплектуючі, що відповідають
-                вашим потребам та бюджету.
-              </SparePartInfoBlockText>
-            </SparePartInfoBlock>
+            <AnimatedComponent>
+              <SparePartInfoBlock>
+                <SparePartInfoBlockTitle>
+                  Ваш успіх у сільському господарстві починається з нас!
+                </SparePartInfoBlockTitle>
+                <SparePartInfoBlockText>
+                  Ми - ваш надійний партнер у виборі запчастин до сівалок.
+                  Завдяки нашому досвіду та професіоналізму, ми забезпечуємо вас
+                  широким асортиментом запчастин високої якості, які гарантовано
+                  підвищать продуктивність вашого обладнання. <br />
+                  Ми розуміємо, що правильно підібрані запчастини є ключовим
+                  фактором успішної роботи вашої техніки. Тому ми завжди раді
+                  допомогти вам обрати оптимальні комплектуючі, що відповідають
+                  вашим потребам та бюджету.
+                </SparePartInfoBlockText>
+              </SparePartInfoBlock>
+            </AnimatedComponent>
           </SparePartSectionWrap>
         </Container>
       </SparePartSection>

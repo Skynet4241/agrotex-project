@@ -48,7 +48,7 @@ export const StyledButton = styled.button`
   color: #fff;
   @media screen and (min-width: 600px) {
     font-size: 18px;
-    padding: 18px 44px;
+    padding: 10px 44px;
     &:hover,
     &:focus {
       background-color: #0e416c;
@@ -59,6 +59,5 @@ export const StyledButton = styled.button`
   @media screen and (min-width: 1200px) {
     font-size: 20px;
     max-width: 400px;
-    padding: 18px 24px;
   }
 `;

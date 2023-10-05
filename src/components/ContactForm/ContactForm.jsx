@@ -37,7 +37,7 @@ export const ContactForm = () => {
             as={StyledTextField}
             type="text"
             id="fullName"
-            label="ФІО"
+            label="Ваше ім'я"
             name="fullName"
           />
           <StyledErrorMessage
@@ -52,7 +52,7 @@ export const ContactForm = () => {
             as={StyledTextField}
             type="text"
             id="phoneNumber"
-            label="Номер телефону"
+            label="Ваш номер телефону"
             name="phoneNumber"
           />
           <StyledErrorMessage
@@ -61,13 +61,13 @@ export const ContactForm = () => {
             className="error"
           />
         </TextFieldWrap>
-
         <TextFieldWrap>
           <Field
             as={StyledTextField}
             id="filled-multiline-static"
             name="description"
-            label="Опис"
+            label="Тема листа"
+            placeholder="Привіт, Агротехлан ..."
             multiline
             rows={4}
             variant="filled"

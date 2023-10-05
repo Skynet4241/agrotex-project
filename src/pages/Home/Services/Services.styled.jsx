@@ -59,7 +59,7 @@ export const ServicesBlock = styled.div`
   @media screen and (min-width: 600px) {
     padding: 0;
     background-color: rgb(14, 65, 108, 0.1);
-    max-width: 860px;
+    max-width: 1200px;
   }
   @media screen and (min-width: 1200px) {
     background-color: rgb(14, 65, 108, 0.05);

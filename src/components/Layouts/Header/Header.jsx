@@ -18,7 +18,7 @@ import {
 } from './Header.styled';
 import debounce from 'lodash.debounce';
 
- const Header = () => {
+const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMenuAvailable, setIsMenuAvailable] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -95,7 +95,10 @@ import debounce from 'lodash.debounce';
                 </NavigationLink>
               </NavigationListItem>
               <NavigationListItem>
-                <NavigationLink to="/" onClick={handleLinkClick}>
+                <NavigationLink
+                  to="/about"
+                  onClick={handleLinkClick}
+                >
                   Про нас
                   <NavigationArrowBlock>
                     <Icon
@@ -107,7 +110,10 @@ import debounce from 'lodash.debounce';
                 </NavigationLink>
               </NavigationListItem>
               <NavigationListItem>
-                <NavigationLink to="/" onClick={handleLinkClick}>
+                <NavigationLink
+                  to="/services"
+                  onClick={handleLinkClick}
+                >
                   Послуги
                   <NavigationArrowBlock>
                     <Icon
@@ -119,7 +125,10 @@ import debounce from 'lodash.debounce';
                 </NavigationLink>
               </NavigationListItem>
               <NavigationListItem>
-                <NavigationLink to="/" onClick={handleLinkClick}>
+                <NavigationLink
+                  to="/spareParts"
+                  onClick={handleLinkClick}
+                >
                   Запчастини
                   <NavigationArrowBlock>
                     <Icon
@@ -131,7 +140,10 @@ import debounce from 'lodash.debounce';
                 </NavigationLink>
               </NavigationListItem>
               <NavigationListItem>
-                <NavigationLink to="/" onClick={handleLinkClick}>
+                <NavigationLink
+                  to="/contacts"
+                  onClick={handleLinkClick}
+                >
                   Контакти
                   <NavigationArrowBlock>
                     <Icon
@@ -161,4 +173,4 @@ import debounce from 'lodash.debounce';
   );
 };
 
-export default Header
+export default Header;

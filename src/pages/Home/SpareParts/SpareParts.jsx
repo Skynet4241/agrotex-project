@@ -1,4 +1,4 @@
-import AnimatedComponent from '../../../utils/AnimatedComponent';
+import AnimatedComponent from '../../../utils/AnimatedComponent/AnimatedComponent';
 import { Container } from '../../../utils/Container';
 import {
   SparePartInfoBlock,

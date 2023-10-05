@@ -33,3 +33,32 @@ export const StyledErrorMessage = styled(ErrorMessage)`
   font-size: 12px;
   color: red;
 `;
+
+export const StyledButton = styled.button`
+  display: flex;
+  margin: 0 auto;
+  padding: 12px 20px;
+  line-height: 28px;
+  font-family: Montserrat;
+  font-size: 16px;
+  background-color: #0063a3;
+  border: 2px solid transparent;
+  transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  cursor: pointer;
+  color: #fff;
+  @media screen and (min-width: 600px) {
+    font-size: 18px;
+    padding: 18px 44px;
+    &:hover,
+    &:focus {
+      background-color: #0e416c;
+      border-color: #0e416c;
+      color: #fff;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    max-width: 400px;
+    padding: 18px 24px;
+  }
+`;

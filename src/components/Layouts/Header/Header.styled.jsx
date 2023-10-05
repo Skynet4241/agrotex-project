@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const HeaderStyle = styled.header`
@@ -43,6 +43,14 @@ export const LogoWrap = styled.div`
     padding: 10px 10px 2px 0;
   }
 `;
+const rotateAnimation = keyframes`
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+`;
 
 export const LogoLink = styled(NavLink)`
   display: flex;
@@ -62,6 +70,7 @@ export const LogoLink = styled(NavLink)`
   & > svg {
     margin-right: 5px;
     fill: #0063a3;
+    animation: ${rotateAnimation} 5s linear infinite;
   }
 `;
 
@@ -141,6 +150,9 @@ export const NavigationLink = styled(NavLink)`
       width: 0%;
       display: block;
       transition: all 0.3s;
+    }
+    &.active {
+      border-bottom: 3px solid #fbad26;
     }
     &:hover::after,
     &:focus::after {

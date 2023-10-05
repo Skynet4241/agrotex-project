@@ -1,6 +1,7 @@
 import { Formik, Field } from 'formik';
 import * as Yup from 'yup';
 import {
+  StyledButton,
   StyledErrorMessage,
   StyledForm,
   StyledTextField,
@@ -78,7 +79,7 @@ export const ContactForm = () => {
           />
         </TextFieldWrap>
 
-        <button type="submit">Відправити</button>
+        <StyledButton type="submit">Відправити</StyledButton>
       </StyledForm>
     </Formik>
   );

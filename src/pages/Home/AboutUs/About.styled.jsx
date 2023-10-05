@@ -100,7 +100,6 @@ export const AboutBtn = styled(NavLink)`
   @media screen and (min-width: 1200px) {
     font-size: 20px;
     max-width: 400px;
-    padding: 18px 24px;
   }
   & > svg {
     fill: #fff;

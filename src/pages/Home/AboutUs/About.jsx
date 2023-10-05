@@ -45,7 +45,7 @@ export const About = () => {
                   обслуговування з оптимальним співвідношенням ціни та якості
                   наших послуг.
                 </AboutText>
-                <AboutBtn>
+                <AboutBtn to="/about">
                   Дізнайтеся більше про Агротехлан{' '}
                   <Icon
                     name="icon-circle-right"

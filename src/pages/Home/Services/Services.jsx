@@ -91,7 +91,7 @@ export const Services = () => {
               </ServicesInfoBlockListItem>
             </ServicesInfoBlockList>
             <AnimatedComponent>
-              <ServicesInfoBlockButton>
+              <ServicesInfoBlockButton to="/services">
                 Детальніше про послуги
                 <Icon
                   name="icon-circle-right"

@@ -17,19 +17,19 @@ const Footer = () => {
           <FooterWrap>
             <FooterNavList>
               <li>
-                <FooterNavLink>Головна</FooterNavLink>
+                <FooterNavLink to="/">Головна</FooterNavLink>
               </li>
               <li>
-                <FooterNavLink>Про нас</FooterNavLink>
+                <FooterNavLink to="/about">Про нас</FooterNavLink>
               </li>
               <li>
-                <FooterNavLink>Послуги</FooterNavLink>
+                <FooterNavLink to="/services">Послуги</FooterNavLink>
               </li>
               <li>
-                <FooterNavLink>Запчастини</FooterNavLink>
+                <FooterNavLink to="/spareParts">Запчастини</FooterNavLink>
               </li>
               <li>
-                <FooterNavLink>Контакти</FooterNavLink>
+                <FooterNavLink to="/contacts">Контакти</FooterNavLink>
               </li>
             </FooterNavList>
             <FooterInfoList>

@@ -137,8 +137,6 @@ margin: 0 0 25px 0;
 @media screen and (min-width: 375px) {
    max-width: 435px;
   }
-
-
 `;
 
 export const StyledContactsTextArea = styles(TextField)`
@@ -174,6 +172,7 @@ export const ContactsStyledButton = styled.button`
   cursor: pointer;
   color: #fff;
   max-width: 200px;
+  
   @media screen and (min-width: 600px) {
     font-size: 18px;
     padding: 10px 44px;
@@ -185,6 +184,7 @@ export const ContactsStyledButton = styled.button`
       color: #fff;
     }
   }
+
   @media screen and (min-width: 1200px) {
     font-size: 20px;
   }
